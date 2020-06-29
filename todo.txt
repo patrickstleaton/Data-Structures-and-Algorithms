@@ -1,0 +1,7 @@
+Sunday: OOP
+Monday: OOP
+Tuesday: Arrays, Strings
+Wednesday: LL
+Thursday: Heap
+Friday: Stacks
+Saturday: Queues

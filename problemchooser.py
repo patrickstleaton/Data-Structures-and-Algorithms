@@ -75,7 +75,13 @@ problems = [
 'https://leetcode.com/problems/balanced-binary-tree',
 'https://leetcode.com/problems/unique-email-addresses',
 'https://leetcode.com/problems/find-all-duplicates-in-an-array',
-'https://leetcode.com/problems/isomorphic-strings'
+'https://leetcode.com/problems/isomorphic-strings',
+'https://leetcode.com/problems/peak-index-in-a-mountain-array',
+'https://leetcode.com/problems/excel-sheet-column-number',
+'https://leetcode.com/problems/house-robber',
+'https://leetcode.com/problems/rotate-array',
+'https://leetcode.com/problems/linked-list-cycle'
+
 ]
 sequence = [i for i in range(len(problems))]
 choices = []

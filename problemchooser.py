@@ -80,7 +80,9 @@ problems = [
 'https://leetcode.com/problems/excel-sheet-column-number',
 'https://leetcode.com/problems/house-robber',
 'https://leetcode.com/problems/rotate-array',
-'https://leetcode.com/problems/linked-list-cycle'
+'https://leetcode.com/problems/linked-list-cycle',
+'https://leetcode.com/problems/can-place-flowers',
+'https://leetcode.com/problems/h-index'
 
 ]
 sequence = [i for i in range(len(problems))]

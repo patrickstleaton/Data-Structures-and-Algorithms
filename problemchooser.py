@@ -83,8 +83,8 @@ problems = [
 'https://leetcode.com/problems/linked-list-cycle',
 'https://leetcode.com/problems/can-place-flowers',
 'https://leetcode.com/problems/h-index',
-'https://leetcode.com/problems/longest-continuous-increasing-subsequence/',
-''
+'https://leetcode.com/problems/longest-continuous-increasing-subsequence',
+'https://leetcode.com/problems/maximize-distance-to-closest-person'
 
 ]
 sequence = [i for i in range(len(problems))]

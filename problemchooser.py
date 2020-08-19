@@ -84,7 +84,11 @@ problems = [
 'https://leetcode.com/problems/can-place-flowers',
 'https://leetcode.com/problems/h-index',
 'https://leetcode.com/problems/longest-continuous-increasing-subsequence',
-'https://leetcode.com/problems/maximize-distance-to-closest-person'
+'https://leetcode.com/problems/maximize-distance-to-closest-person',
+'https://leetcode.com/problems/subtree-of-another-tree',
+'https://leetcode.com/problems/kth-largest-element-in-a-stream',
+'https://leetcode.com/problems/n-ary-tree-preorder-traversal',
+'https://leetcode.com/problems/trim-a-binary-search-tree'
 
 ]
 sequence = [i for i in range(len(problems))]

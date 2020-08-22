@@ -88,7 +88,9 @@ problems = [
 'https://leetcode.com/problems/subtree-of-another-tree',
 'https://leetcode.com/problems/kth-largest-element-in-a-stream',
 'https://leetcode.com/problems/n-ary-tree-preorder-traversal',
-'https://leetcode.com/problems/trim-a-binary-search-tree'
+'https://leetcode.com/problems/trim-a-binary-search-tree',
+'https://leetcode.com/problems/longest-palindromic-substring',
+'https://leetcode.com/problems/partition-labels'
 
 ]
 sequence = [i for i in range(len(problems))]

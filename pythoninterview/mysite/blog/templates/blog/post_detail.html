@@ -1,0 +1,56 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+
+
+<div class="pops col-md-12">
+  <div class="detail_title shadow-lg p-3 mb-5 bg-white rounded">
+    <div align="center">
+      <h1 class="posttitle">{{post.title|safe}}</h1>
+      <i class="fas fa-user-ninja"></i>
+      {{post.author}}
+    </div>
+
+    {% if post.published_date %}
+    <div class="date postdate">
+      Published: {{ post.published_date }}
+    </div>
+    {% else %}
+    <a class="btn btn-default" href="{% url 'post_publish' pk=post.pk%}">Publish</a>
+    {% endif %}
+
+    <div class="fa-2x social_links" align="center">
+      <a href="https://www.facebook.com/sharer/sharer.php?u={{request.build_absolute_uri}}">
+        <i class="fab fa-facebook-square"></i>
+      </a>
+      <a href="https://twitter.com/home?status={{request.build_absolute_uri}}">
+      </a>
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url={{request.build_absolute_uri}}&title=Gaijin%20Gaming&summary=Check%20out%20this%20article%20from%20Gaijin%20Gaming%20&source={{request.build_absolute_uri}}">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="http://www.reddit.com/submit?url={{request.build_absolute_uri}}&title=Check%20out%20this%20article%20from%20Gaijin%20Gaming">
+        <i class="fab fa-reddit-square"></i>
+      </a>
+     </div>
+
+     <div class="twitter" align="center">
+       <a href="https://twitter.com/intent/tweet?button_hashtag=article&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-text="Check out the newest article from Gaijin Gaming!" data-url="{{request.build_absolute_uri}}" data-lang="en" data-show-count="false"></a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+     </div>
+  </div>
+
+<h5><b>Problem Description</b></h5>
+  <div class="postdescription shadow p-3 mb-5 bg-white rounded">
+      <p>{{ post.description|safe}}</p>
+  </div>
+
+<h5><b>Problem Solution</b></h5>
+  <div class="posttext shadow p-3 mb-5 bg-white rounded">
+      <p>{{ post.text|safe}}</p>
+  </div>
+
+<h5><b>Problem Explanation</b></h5>
+<div class="postexplanation shadow p-3 mb-5 bg-white rounded">
+    <p>{{ post.explanation|safe}}</p>
+</div>
+
+  </div>
+  {% endblock %}

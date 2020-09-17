@@ -1,0 +1,28 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+<div class="col-md-6 postlist">
+  {% for post in post_list %}
+  <div class="card" style="width: 20rem;">
+    <h4 align="center"><a class="text-dark" href="{% url 'post_detail' pk=post.pk %}">
+        {{ post.title|safe }}</a></h4>
+    <div class="card-body" style="background-color: rgb(66, 84, 109)">
+      <div class="postauthor text-light">
+        <i class="fas fa-user-ninja"></i>
+        {{post.author}}
+      </div>
+      <div class="date postauthor text-light">
+        <h7>{{post.published_date}}</h7>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  {% endfor %}
+</div>
+<div class="col-s-4" align="center">
+  <div class="shadow-sm p-3 mb-5 bg-white rounded" style="width: 20rem;">
+    <h3>Subscribe and get two random solutions emailed daily!</h3>
+    <i class="far fa-paper-plane fa-7x"></i>
+  </div>
+</div>
+{% endblock %}

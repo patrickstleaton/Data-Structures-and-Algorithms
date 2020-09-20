@@ -1,4 +1,5 @@
 {% extends 'blog/base.html' %}
+{% load static %}
 {% block content %}
 <div class="postlist col-md-12">
     <h2 class="all_questions" align="center">All Questions</h2>
@@ -37,27 +38,27 @@
         <h7>{{post.category}}</h7>
         <br>
         {% if post.category == "linked lists" %}
-        <i class="fas fa-ellipsis-h"></i>
+        <i class="fas fa-ellipsis-h fa-2x"></i>
         {% elif post.category == "trees" %}
-        <i class="fas fa-tree"></i>
+        <img src="{% static 'images/thumbnail_image5.png' %}" width="16.5" height="16.5">
         {% elif post.category == "arrays" %}
-        <i class="fas fa-columns"></i><i class="fas fa-columns"></i>
+        <img src="{% static 'images/thumbnail_image7.png' %}" width="35" height="13">
         {% elif post.category == "dynamic programming" %}
         <i class="fas fa-sort-amount-up"></i>
         {% elif post.category == "graphs" %}
-        <i class="fas fa-th"></i>
+        <i class="fas fa-th fa-2x"></i>
         {% elif post.category == "stacks" %}
         <i class="fas fa-angle-double-up"></i>
         {% elif post.category == "queues" %}
         <i class="fas fa-angle-double-right"></i>
         {% elif post.category == "strings" %}
-        <p style = "font-size: 11px; font: verdana;"><b>bruh911</b></p>
+        <p style = "font-size: 11px; font: verdana;"><b>aabb123</b></p>
         {% elif post.category == "recursion" %}
         <i class="fas fa-infinity"></i>
         {% elif post.category == "tries" %}
-        <i class="fas fa-sitemap"></i>
+        <img src="{% static 'images/thumbnail_image5.png' %}" width="33" height="11">
         {% elif post.category == "heaps" %}
-        <i class="fas fa-sitemap"></i>
+        <img src="{% static 'images/thumbnail_image6.png' %}" width="25.3" height="22">
         {% endif %}
       </div>
     </div>

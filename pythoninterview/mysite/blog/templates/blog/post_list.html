@@ -1,21 +1,32 @@
 {% extends 'blog/base.html' %}
 {% block content %}
 <div class="postlist col-md-12">
+    <h2 class="all_questions" align="center">All Questions</h2>
+    <br>
+    <br>
   <div class="row">
+  <br>
   {% for post in post_list %}
   <div class="card" style="width: 25%">
     <h4 align="center"><a class="text-dark" style = "font-size:13px;" href="{% url 'post_detail' pk=post.pk %}">
       <br>
       <b>  {{ post.title|safe }}</b></a></h4>
-    <div class="card-body" style="background-color: rgb(66, 84, 109)">
-      <div class="postauthor text-light">
+    {% if post.difficulty == "easy" %}
+    <div class="card-body" style="background-color: 	rgb(0,100,0)">
+    {% elif post.difficulty == "medium" %}
+    <div class="card-body" style="background-color: rgb(204,204,0)">
+    {% elif post.difficulty == "hard" %}
+    <div class="card-body" style="background-color: rgb(128,0,0)"">
+    {% endif %}
+      <div class="postdifficulty text-light">
         {{post.difficulty}}
         <br>
         <! –– Set amount of brains depending on difficulty ––>
         {% if post.difficulty == "medium" %}
-        <i class="fas fa-brain"></i><i class="fas fa-brain"></i>
+
+        <i class="fas fa-brain fa-2x"></i>
         {% elif post.difficulty == "hard" %}
-        <i class="fas fa-brain"></i><i class="fas fa-brain"></i><i class="fas fa-brain"></i>
+        <i class="fas fa-brain fa-3x"></i>
         {% else %}
         <i class="fas fa-brain"></i>
         {% endif %}
@@ -40,13 +51,13 @@
         {% elif post.category == "queues" %}
         <i class="fas fa-angle-double-right"></i>
         {% elif post.category == "strings" %}
-        <i class="fas fa-spell-check"></i>
+        <p style = "font-size: 11px; font: verdana;"><b>bruh911</b></p>
         {% elif post.category == "recursion" %}
         <i class="fas fa-infinity"></i>
         {% elif post.category == "tries" %}
         <i class="fas fa-sitemap"></i>
         {% elif post.category == "heaps" %}
-        <i class="fas fa-tree heap""></i>
+        <i class="fas fa-sitemap"></i>
         {% endif %}
       </div>
     </div>

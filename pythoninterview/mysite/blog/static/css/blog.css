@@ -1,17 +1,18 @@
-body { padding-top: 135px;
+body { padding-top: 120px;
   font-family: 'Special Elite', cursive;
   background: #ECE9E6;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   width:97%;
 }
-.site-main,
-div.content-area,
-div.page {
-    margin-bottom: 100em;
-}
 .logo{
    text-align: center;
+}
+.postlist{
+  padding-left: 4% !important;
+}
+.heap{
+  transform: rotate(180deg);
 }
 .pops{
   padding-left: 30px;
@@ -21,6 +22,10 @@ div.page {
 }
 .card-body{
   background-color: blue;
+}
+.card{
+  font-size:12px;
+  text-align: left;
 }
 .posttext{
   font-family: verdana;
@@ -38,10 +43,11 @@ div.page {
 }
 .navbar{
   float:left;
-  height:12%;
-    font-family: 'Rock Salt', cursive;
+  height:14%;
+  font-family: 'Rock Salt', cursive;
 }
 .footer{
+  margin-top: 175px;
   width:103%;
 }
 .content{

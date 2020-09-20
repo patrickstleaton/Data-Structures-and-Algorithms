@@ -1,28 +1,58 @@
 {% extends 'blog/base.html' %}
 {% block content %}
-<div class="col-md-6 postlist">
+<div class="postlist col-md-12">
+  <div class="row">
   {% for post in post_list %}
-  <div class="card" style="width: 20rem;">
-    <h4 align="center"><a class="text-dark" href="{% url 'post_detail' pk=post.pk %}">
-        {{ post.title|safe }}</a></h4>
+  <div class="card" style="width: 25%">
+    <h4 align="center"><a class="text-dark" style = "font-size:13px;" href="{% url 'post_detail' pk=post.pk %}">
+      <br>
+      <b>  {{ post.title|safe }}</b></a></h4>
     <div class="card-body" style="background-color: rgb(66, 84, 109)">
       <div class="postauthor text-light">
-        <i class="fas fa-user-ninja"></i>
-        {{post.author}}
+        {{post.difficulty}}
+        <br>
+        <! –– Set amount of brains depending on difficulty ––>
+        {% if post.difficulty == "medium" %}
+        <i class="fas fa-brain"></i><i class="fas fa-brain"></i>
+        {% elif post.difficulty == "hard" %}
+        <i class="fas fa-brain"></i><i class="fas fa-brain"></i><i class="fas fa-brain"></i>
+        {% else %}
+        <i class="fas fa-brain"></i>
+        {% endif %}
+        <! –– Set graphic according to  ––>
       </div>
-      <div class="date postauthor text-light">
-        <h7>{{post.published_date}}</h7>
+      <div class="category text-light">
+        <br>
+        <h7>{{post.category}}</h7>
+        <br>
+        {% if post.category == "linked lists" %}
+        <i class="fas fa-ellipsis-h"></i>
+        {% elif post.category == "trees" %}
+        <i class="fas fa-tree"></i>
+        {% elif post.category == "arrays" %}
+        <i class="fas fa-columns"></i><i class="fas fa-columns"></i>
+        {% elif post.category == "dynamic programming" %}
+        <i class="fas fa-sort-amount-up"></i>
+        {% elif post.category == "graphs" %}
+        <i class="fas fa-th"></i>
+        {% elif post.category == "stacks" %}
+        <i class="fas fa-angle-double-up"></i>
+        {% elif post.category == "queues" %}
+        <i class="fas fa-angle-double-right"></i>
+        {% elif post.category == "strings" %}
+        <i class="fas fa-spell-check"></i>
+        {% elif post.category == "recursion" %}
+        <i class="fas fa-infinity"></i>
+        {% elif post.category == "tries" %}
+        <i class="fas fa-sitemap"></i>
+        {% elif post.category == "heaps" %}
+        <i class="fas fa-tree heap""></i>
+        {% endif %}
       </div>
     </div>
   </div>
   <br>
-  <br>
   {% endfor %}
-</div>
-<div class="col-s-4" align="center">
-  <div class="shadow-sm p-3 mb-5 bg-white rounded" style="width: 20rem;">
-    <h3>Subscribe and get two random solutions emailed daily!</h3>
-    <i class="far fa-paper-plane fa-7x"></i>
   </div>
 </div>
 {% endblock %}

@@ -15,6 +15,7 @@ CATEGORY_CHOICES = (
     ("linked lists", "Linked Lists"),
     ("trees", "Trees"),
     ("graphs", "Graphs"),
+    ("heaps", "Heaps"),
 )
 
 
@@ -22,6 +23,7 @@ class Post(models.Model):
     author = models.TextField()
     title = RichTextField()
     category = models.TextField(choices = CATEGORY_CHOICES, default = 'arrays')
+    alt_category = models.TextField(choices = CATEGORY_CHOICES, blank=True, null = True)
     difficulty = models.TextField(choices = DIFFICULTY_CHOICES, default = 'easy')
     description = RichTextField()
     text = RichTextField()
@@ -36,5 +38,4 @@ class Post(models.Model):
         return reverse("post_detail",kwargs={'pk':self.pk})
 
     def __str__(self):
-        return str("{}'s article published on {}").format(self.author,
-                                                          self.published_date)
+        return str(self.title)

@@ -4,14 +4,13 @@
 <div class="postlist col-md-12">
     <h2 class="all_questions" align="center">All Questions</h2>
     <br>
-    <br>
   <div class="row">
   <br>
   {% for post in post_list %}
-  <div class="card" style="width: 25%">
-    <h4 align="center"><a class="text-dark" style = "font-size:13px;" href="{% url 'post_detail' pk=post.pk %}">
+  <div class="card shadow" style="width: 25%">
+    <h3 align="center"><a class="text-dark" style = "font-size:13px;" href="{% url 'post_detail' pk=post.pk %}">
       <br>
-      <b>  {{ post.title|safe }}</b></a></h4>
+      <b>  {{ post.title|safe }}</b></a></h3>
     {% if post.difficulty == "easy" %}
     <div class="card-body" style="background-color: 	rgb(0,100,0)">
     {% elif post.difficulty == "medium" %}
@@ -19,12 +18,11 @@
     {% elif post.difficulty == "hard" %}
     <div class="card-body" style="background-color: rgb(128,0,0)"">
     {% endif %}
-      <div class="postdifficulty text-light">
+      <div class="postdifficulty text-light shadow rounded"align="center">
         {{post.difficulty}}
         <br>
         <! –– Set amount of brains depending on difficulty ––>
         {% if post.difficulty == "medium" %}
-
         <i class="fas fa-brain fa-2x"></i>
         {% elif post.difficulty == "hard" %}
         <i class="fas fa-brain fa-3x"></i>
@@ -33,20 +31,23 @@
         {% endif %}
         <! –– Set graphic according to  ––>
       </div>
-      <div class="category text-light">
-        <br>
+      <br>
+      <div class="category text-light badge badge-dark my-1">
         <h7>{{post.category}}</h7>
         <br>
+        <!-- Set icons for primary category-->
         {% if post.category == "linked lists" %}
-        <i class="fas fa-ellipsis-h fa-2x"></i>
+        <img src="{% static 'images/thumbnail_image8.png' %}" width="45" height="12">
         {% elif post.category == "trees" %}
         <img src="{% static 'images/thumbnail_image5.png' %}" width="16.5" height="16.5">
         {% elif post.category == "arrays" %}
         <img src="{% static 'images/thumbnail_image7.png' %}" width="35" height="13">
+        {% elif post.category == "hashmaps" %}
+        <i class="fas fa-columns"></i>
         {% elif post.category == "dynamic programming" %}
         <i class="fas fa-sort-amount-up"></i>
         {% elif post.category == "graphs" %}
-        <i class="fas fa-th fa-2x"></i>
+        <i class="fas fa-th"></i>
         {% elif post.category == "stacks" %}
         <i class="fas fa-angle-double-up"></i>
         {% elif post.category == "queues" %}
@@ -60,7 +61,40 @@
         {% elif post.category == "heaps" %}
         <img src="{% static 'images/thumbnail_image6.png' %}" width="25.3" height="22">
         {% endif %}
-      </div>
+        </div>
+        <br>
+        <!-- Set icons for alternate category-->
+        <div class="alt_category text-light badge badge-dark">
+        {% if post.alt_category %}
+        <h7>{{post.alt_category}}</h7>
+        <br>
+        {% endif %}
+        {% if post.alt_category == "linked lists" %}
+        <img src="{% static 'images/thumbnail_image8.png' %}" width="45" height="12">
+        {% elif post.alt_category == "trees" %}
+        <img src="{% static 'images/thumbnail_image5.png' %}" width="16.5" height="16.5">
+        {% elif post.alt_category == "arrays" %}
+        <img src="{% static 'images/thumbnail_image7.png' %}" width="35" height="13">
+        {% elif post.alt_category == "hashmaps" %}
+        <i class="fas fa-columns"></i>
+        {% elif post.alt_category == "dynamic programming" %}
+        <i class="fas fa-sort-amount-up"></i>
+        {% elif post.alt_category == "graphs" %}
+        <i class="fas fa-th fa-2x"></i>
+        {% elif post.alt_category == "stacks" %}
+        <i class="fas fa-angle-double-up"></i>
+        {% elif post.alt_category == "queues" %}
+        <i class="fas fa-angle-double-right"></i>
+        {% elif post.alt_category == "strings" %}
+        <p style = "font-size: 11px; font: verdana;"><b>aabb123</b></p>
+        {% elif post.alt_category == "recursion" %}
+        <i class="fas fa-infinity"></i>
+        {% elif post.alt_category == "tries" %}
+        <img src="{% static 'images/thumbnail_image5.png' %}" width="33" height="11">
+        {% elif post.alt_category == "heaps" %}
+        <img src="{% static 'images/thumbnail_image6.png' %}" width="25.3" height="22">
+        {% endif %}
+        </div>
     </div>
   </div>
   <br>

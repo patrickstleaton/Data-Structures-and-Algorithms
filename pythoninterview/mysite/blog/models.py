@@ -16,8 +16,8 @@ CATEGORY_CHOICES = (
     ("trees", "Trees"),
     ("graphs", "Graphs"),
     ("heaps", "Heaps"),
+    ('hashmaps', 'Hashmap'),
 )
-
 
 class Post(models.Model):
     author = models.TextField()
@@ -28,6 +28,7 @@ class Post(models.Model):
     description = RichTextField()
     text = RichTextField()
     explanation = RichTextField()
+    additional_notes = RichTextField(blank=True, null = True)
     published_date = models.DateTimeField(blank=True, null=True)
 
     def publish(self):
@@ -38,4 +39,4 @@ class Post(models.Model):
         return reverse("post_detail",kwargs={'pk':self.pk})
 
     def __str__(self):
-        return str(self.title)
+        return str(self.title.strip("<div>").strip("</div>"))

@@ -52,5 +52,12 @@
     <p>{{ post.explanation|safe}}</p>
 </div>
 
+{% if post.additional_notes %}
+<h5><b>Additional Notes</b></h5>
+<div class="additionalnotes shadow p-3 mb-5 bg-white rounded">
+    <p>{{ post.additional_notes|safe}}</p>
+</div>
+{% endif %}
+
   </div>
   {% endblock %}

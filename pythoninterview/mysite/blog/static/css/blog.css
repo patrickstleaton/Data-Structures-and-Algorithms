@@ -7,12 +7,10 @@ body { padding-top: 120px;
 }
 .logo{
    text-align: center;
+   font-size: 15px !important;
 }
 .postlist{
   padding-left: 4% !important;
-}
-.heap{
-  transform: rotate(180deg);
 }
 .pops{
   padding-left: 30px;
@@ -23,9 +21,14 @@ body { padding-top: 120px;
 .card-body{
   background-color: blue;
 }
+.category{
+  font-size:11px;
+}
+.alt_category{
+  font-size:11px;
+}
 .card{
-  font-size:13px;
-  text-align: left;
+  font-size:14px;
 }
 .posttext{
   font-family: verdana;
@@ -38,17 +41,23 @@ body { padding-top: 120px;
   font-family: verdana;
   font-size: 15px;
 }
+.additionalnotes{
+  font-family: verdana;
+  font-size: 15px;
+}
 .postlist{
   padding-left:15px;
 }
 .navbar{
   float:left;
-  height:14%;
+  height:70px;
   font-family: 'Rock Salt', cursive;
+  font-size: 4% !important;
 }
 .footer{
   margin-top: 175px;
   width:103%;
+  height: 15%;
 }
 .content{
   padding-left: 10px;

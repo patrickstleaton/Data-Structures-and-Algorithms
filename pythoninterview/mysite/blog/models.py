@@ -14,7 +14,11 @@ CATEGORY_CHOICES = (
     ("strings", "Strings"),
     ("linked lists", "Linked Lists"),
     ("trees", "Trees"),
+    ("dp", "DP"),
     ("graphs", "Graphs"),
+    ("stacks", "Stacks"),
+    ("queues", "Queues"),
+    ("tries", "Tries"),
     ("heaps", "Heaps"),
     ('hashmaps', 'Hashmap'),
 )
@@ -39,4 +43,4 @@ class Post(models.Model):
         return reverse("post_detail",kwargs={'pk':self.pk})
 
     def __str__(self):
-        return str(self.title.strip("<div>").strip("</div>"))
+        return str(self.title.strip("<p>").strip("</p>"))

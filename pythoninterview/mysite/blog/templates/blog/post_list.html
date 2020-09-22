@@ -8,11 +8,11 @@
   <br>
   {% for post in post_list %}
   <div class="card shadow" style="width: 25%">
-    <h3 align="center"><a class="text-dark" style = "font-size:13px;" href="{% url 'post_detail' pk=post.pk %}">
-      <br>
-      <b>  {{ post.title|safe }}</b></a></h3>
+    <h3 align="center"><a class="check text-dark" style = "font-size:13px;" href="{% url 'post_detail' pk=post.pk %}">
+       <br>
+      <b>{{ post.title|safe }}</b></a></h3>
     {% if post.difficulty == "easy" %}
-    <div class="card-body" style="background-color: 	rgb(0,100,0)">
+    <div class="card-body" style="background-color: rgb(0,100,0)">
     {% elif post.difficulty == "medium" %}
     <div class="card-body" style="background-color: rgb(204,204,0)">
     {% elif post.difficulty == "hard" %}
@@ -32,6 +32,7 @@
         <! –– Set graphic according to  ––>
       </div>
       <br>
+
       <div class="category text-light badge badge-dark my-1">
         <h7>{{post.category}}</h7>
         <br>
@@ -42,18 +43,18 @@
         <img src="{% static 'images/thumbnail_image5.png' %}" width="16.5" height="16.5">
         {% elif post.category == "arrays" %}
         <img src="{% static 'images/thumbnail_image7.png' %}" width="35" height="13">
+        {% elif post.category == "strings" %}
+        <p class= "my-1" style = "font-size: 9px; font: verdana;"><b>aabb123</b></p>
         {% elif post.category == "hashmaps" %}
         <i class="fas fa-columns"></i>
-        {% elif post.category == "dynamic programming" %}
-        <i class="fas fa-sort-amount-up"></i>
+        {% elif post.category == "dp" %}
+        <i class="my-1 fas fa-sort-amount-up"></i>
         {% elif post.category == "graphs" %}
         <i class="fas fa-th"></i>
         {% elif post.category == "stacks" %}
         <i class="fas fa-angle-double-up"></i>
         {% elif post.category == "queues" %}
         <i class="fas fa-angle-double-right"></i>
-        {% elif post.category == "strings" %}
-        <p style = "font-size: 11px; font: verdana;"><b>aabb123</b></p>
         {% elif post.category == "recursion" %}
         <i class="fas fa-infinity"></i>
         {% elif post.category == "tries" %}
@@ -63,8 +64,15 @@
         {% endif %}
         </div>
         <br>
-        <!-- Set icons for alternate category-->
+
+        <!-- Make badge tags if alternate category exists-->
+        {% if post.alt_category %}
         <div class="alt_category text-light badge badge-dark">
+        {% else %}
+        <div class="alt_category text-light">
+        {% endif %}
+
+        <!-- Set icons for alternate category if exists-->
         {% if post.alt_category %}
         <h7>{{post.alt_category}}</h7>
         <br>
@@ -77,8 +85,8 @@
         <img src="{% static 'images/thumbnail_image7.png' %}" width="35" height="13">
         {% elif post.alt_category == "hashmaps" %}
         <i class="fas fa-columns"></i>
-        {% elif post.alt_category == "dynamic programming" %}
-        <i class="fas fa-sort-amount-up"></i>
+        {% elif post.alt_category == "dp" %}
+        <i class="my-1 fas fa-sort-amount-up"></i>
         {% elif post.alt_category == "graphs" %}
         <i class="fas fa-th fa-2x"></i>
         {% elif post.alt_category == "stacks" %}
@@ -86,13 +94,14 @@
         {% elif post.alt_category == "queues" %}
         <i class="fas fa-angle-double-right"></i>
         {% elif post.alt_category == "strings" %}
-        <p style = "font-size: 11px; font: verdana;"><b>aabb123</b></p>
+        <p class= "my-1" style = "font-size: 9px; font: verdana;"><b>aabb123</b></p>
         {% elif post.alt_category == "recursion" %}
         <i class="fas fa-infinity"></i>
         {% elif post.alt_category == "tries" %}
         <img src="{% static 'images/thumbnail_image5.png' %}" width="33" height="11">
         {% elif post.alt_category == "heaps" %}
         <img src="{% static 'images/thumbnail_image6.png' %}" width="25.3" height="22">
+        {% elif not post.alt_category%}
         {% endif %}
         </div>
     </div>

@@ -47,8 +47,10 @@
         <p class= "my-1" style = "font-size: 9px; font: verdana;"><b>aabb123</b></p>
         {% elif post.category == "hashmaps" %}
         <i class="fas fa-columns"></i>
-        {% elif post.category == "dp" %}
+        {% elif post.category == "DP" %}
         <i class="my-1 fas fa-sort-amount-up"></i>
+        {% elif post.category == "math" %}
+        <i class="fas fa-calculator"></i>
         {% elif post.category == "graphs" %}
         <i class="fas fa-th"></i>
         {% elif post.category == "stacks" %}
@@ -85,8 +87,10 @@
         <img src="{% static 'images/thumbnail_image7.png' %}" width="35" height="13">
         {% elif post.alt_category == "hashmaps" %}
         <i class="fas fa-columns"></i>
-        {% elif post.alt_category == "dp" %}
+        {% elif post.alt_category == "DP" %}
         <i class="my-1 fas fa-sort-amount-up"></i>
+        {% elif post.alt_category == "math" %}
+        <i class="fas fa-calculator"></i>
         {% elif post.alt_category == "graphs" %}
         <i class="fas fa-th fa-2x"></i>
         {% elif post.alt_category == "stacks" %}

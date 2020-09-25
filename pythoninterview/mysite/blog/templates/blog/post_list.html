@@ -2,10 +2,18 @@
 {% load static %}
 {% block content %}
 <div class="postlist col-md-12">
-    <h2 class="all_questions" align="center">All Questions</h2>
+    <!-- Set question count at top of page -->
+    {% if not post_list.count %}
+    <h1 class = "counter my-5" align = "center">No Questions Found</h1>
+    <br><br>
+    {% elif post_list.count == 1 %}
+    <h1 class = "counter my-3" align="center">{{post_list.count}} Question</h1>
     <br>
+    {% else %}
+    <h1 class = "counter my-3" align="center">All {{post_list.count}} Questions</h1>
+    <br>
+    {% endif %}
   <div class="row">
-  <br>
   {% for post in post_list %}
   <div class="card shadow" style="width: 25%">
     <h3 align="center"><a class="check text-dark" style = "font-size:13px;" href="{% url 'post_detail' pk=post.pk %}">
@@ -19,6 +27,8 @@
     <div class="card-body" style="background-color: rgb(128,0,0)"">
     {% endif %}
       <div class="postdifficulty text-light shadow rounded"align="center">
+        <!-- Set link to post difficulty list -->
+        <a class="text-light" href="{% url 'difficulty_post_list' difficulty=post.difficulty %}">
         {{post.difficulty}}
         <br>
         <! –– Set amount of brains depending on difficulty ––>
@@ -30,10 +40,12 @@
         <i class="fas fa-brain"></i>
         {% endif %}
         <! –– Set graphic according to  ––>
+        </a>
       </div>
       <br>
 
       <div class="category text-light badge badge-dark my-1">
+        <a class="text-light" href="{% url 'category_post_list' category=post.category %}">
         <h7>{{post.category}}</h7>
         <br>
         <!-- Set icons for primary category-->
@@ -64,6 +76,7 @@
         {% elif post.category == "heaps" %}
         <img src="{% static 'images/thumbnail_image6.png' %}" width="25.3" height="22">
         {% endif %}
+        </a>
         </div>
         <br>
 
@@ -75,6 +88,7 @@
         {% endif %}
 
         <!-- Set icons for alternate category if exists-->
+        <a class="text-light" href="{% url 'category_post_list' category=post.alt_category %}">
         {% if post.alt_category %}
         <h7>{{post.alt_category}}</h7>
         <br>
@@ -107,10 +121,10 @@
         <img src="{% static 'images/thumbnail_image6.png' %}" width="25.3" height="22">
         {% elif not post.alt_category%}
         {% endif %}
+        </a>
         </div>
     </div>
   </div>
-  <br>
   {% endfor %}
   </div>
 </div>

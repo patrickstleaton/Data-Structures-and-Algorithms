@@ -27,15 +27,48 @@
 <nav class="navbar navbar-default fixed-top navbar-light navbar-expand-md" style="background-color: rgb(55, 78, 109)">
   <a class="nav-item">
     <a class='navbar-brand text-light' href="{% url 'post_list'%}">
-      <img src="{% static 'images/thumbnail_image3.png' %}" width="55" height="55"> AlgoNinjutsu</a>
+      <img src="{% static 'images/thumbnail_image3.png' %}" width="55" height="55"> <b>AlgoNinjutsu</b></a>
   <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar" name="button"
    width="10" height="10">
     <i class="fas fa-hamburger text-light fa-2x"></i>
   </button>
-  <div class="collapse navbar-collapse justify-content-between" id="navbar">
-    <ul class="navbar-nav font-weight-bold fa-2x">
+  <div class="navbar_links collapse navbar-collapse justify-content-between" id="navbar">
+    <ul class=" navbar-nav font-weight-bold px-2 fa-1x">
+      <li class="nav-item dropdown">
+        <span class="nav-link dropdown-toggle" data-toggle = "dropdown">
+          <a class = "text-light" href=""><b>Difficulty</b></a></span>
+        <span style="color:blue;" class="caret"></span>
+        <ul class="dropdown-menu">
+          <li><a class = "text-white" href="#">Easy</a></li>
+          <li><a class = "text-white" href="">Medium</a></li>
+          <li><a class = "text-white" href="#">Hard</a></li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown">
+        <span class="nav-link dropdown-toggle" data-toggle = "dropdown">
+          <a class = "text-light" href=""><b>Categories</b></a></span>
+        <span class="caret"></span>
+        <ul class="dropdown-menu">
+          <li><a class = "text-white" href="#">Arrays</a></li>
+          <li><a class = "text-white" href="">Strings</a></li>
+          <li><a class = "text-white" href="#">Hashmaps</a></li>
+          <li><a class = "text-white" href="#">Linked Lists</a></li>
+          <li><a class = "text-white" href="#">DP</a></li>
+          <li><a class = "text-white" href="#">Math</a></li>
+          <li><a class = "text-white" href="#">Stacks</a></li>
+          <li><a class = "text-white" href="#">Queues</a></li>
+        </ul>
+      </li>
     </ul>
-
+    <form class="form-inline ml-2" action="", method = "GET">
+      <div class="input-group col-xs-1">
+        <input type="text" class="form-control" name="search_name" placeholder="Search Questions">
+        <div class="input-group-append">
+          <button type="submit" name="search"><i style="color:rgb(55, 78, 109);" class="fas fa-bomb fa-2x"></i>
+          </button>
+        </div>
+      </div>
+    </form>
   </div>
 </nav>
 

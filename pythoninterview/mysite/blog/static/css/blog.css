@@ -7,7 +7,7 @@ body { padding-top: 120px;
 }
 .logo{
    text-align: center;
-   font-size: 15px !important;
+   font-size: 16px !important;
 }
 .postlist{
   padding-left: 4% !important;
@@ -16,14 +16,14 @@ body { padding-top: 120px;
   padding-left: 30px;
 }
 .counter{
-    font-family: 'Rock Salt', cursive;
-      font-size: 35px;
+  font-family: 'Rock Salt', cursive;
+  font-size: 35px;
 }
 .postdate{
   text-align: center;
 }
-.card-body{
-  background-color: blue;
+a.check:visited {
+  color: red !important;
 }
 .category{
   font-size:11px;
@@ -57,6 +57,28 @@ body { padding-top: 120px;
   height:75px;
   font-family: 'Rock Salt', cursive;
   font-size: 4% !important;
+}
+.navbar_links{
+  font-size: 14px;
+  color:black !important;
+}
+.form-control{
+  height:34px;
+}
+
+.dropdown-menu {
+  background-color: rgb(55, 78, 109);
+  border-color: rgb(55, 78, 109);
+  width:102%;
+}
+.nav-link{
+    background-color: rgb(55, 78, 109);
+    border-color: rgb(55, 78, 109);
+    width:102%;
+}
+.navbar-toggler{
+  background-color: rgb(55, 78, 109);
+  border-color: rgb(55, 78, 109);
 }
 .footer{
   margin-top: 400px;

@@ -19,12 +19,15 @@ body { padding-top: 120px;
   font-family: 'Rock Salt', cursive;
   font-size: 35px;
 }
+.dropdown-menu{
+  font-size:12px;
+}
 .postdate{
   text-align: center;
 }
-a.check:visited {
+/*a.check:visited {
   color: red !important;
-}
+}*/
 .category{
   font-size:11px;
 }

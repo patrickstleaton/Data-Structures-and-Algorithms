@@ -39,9 +39,9 @@
           <a class = "text-light" href=""><b>Difficulty</b></a></span>
         <span style="color:blue;" class="caret"></span>
         <ul class="dropdown-menu">
-          <li><a class = "text-white" href="#">Easy</a></li>
-          <li><a class = "text-white" href="">Medium</a></li>
-          <li><a class = "text-white" href="#">Hard</a></li>
+          <li><a class = "text-white" href="{% url 'difficulty_post_list' difficulty='easy' %}">Easy</a></li>
+          <li><a class = "text-white" href="{% url 'difficulty_post_list' difficulty='medium' %}">Medium</a></li>
+          <li><a class = "text-white" href="{% url 'difficulty_post_list' difficulty='hard' %}">Hard</a></li>
         </ul>
       </li>
       <li class="nav-item dropdown">
@@ -49,14 +49,14 @@
           <a class = "text-light" href=""><b>Categories</b></a></span>
         <span class="caret"></span>
         <ul class="dropdown-menu">
-          <li><a class = "text-white" href="#">Arrays</a></li>
-          <li><a class = "text-white" href="">Strings</a></li>
-          <li><a class = "text-white" href="#">Hashmaps</a></li>
-          <li><a class = "text-white" href="#">Linked Lists</a></li>
-          <li><a class = "text-white" href="#">DP</a></li>
-          <li><a class = "text-white" href="#">Math</a></li>
-          <li><a class = "text-white" href="#">Stacks</a></li>
-          <li><a class = "text-white" href="#">Queues</a></li>
+          <li><a class = "text-white" href="{% url 'category_post_list' category='arrays' %}">Arrays</a></li>
+          <li><a class = "text-white" href="{% url 'category_post_list' category='strings' %}">Strings</a></li>
+          <li><a class = "text-white" href="{% url 'category_post_list' category='hashmaps' %}">Hashmaps</a></li>
+          <li><a class = "text-white" href="{% url 'category_post_list' category='linked lists' %}">Linked Lists</a></li>
+          <li><a class = "text-white" href="{% url 'category_post_list' category='DP' %}">DP</a></li>
+          <li><a class = "text-white" href="{% url 'category_post_list' category='math' %}">Math</a></li>
+          <li><a class = "text-white" href="{% url 'category_post_list' category='stacks' %}">Stacks</a></li>
+          <li><a class = "text-white" href="{% url 'category_post_list' category='queues' %}">Queues</a></li>
         </ul>
       </li>
     </ul>

@@ -22,6 +22,8 @@ CATEGORY_CHOICES = (
     ("tries", "Tries"),
     ("heaps", "Heaps"),
     ('hashmaps', 'Hashmap'),
+    ('binary', 'Binary'),
+    ('hashsets', 'Hashsets'),
 )
 
 class Post(models.Model):

@@ -9,10 +9,12 @@ DIFFICULTY_CHOICES = (
     ("medium", "Medium"),
     ("hard", "Hard"),
 )
+
 CATEGORY_CHOICES = (
     ("arrays", "Arrays"),
     ("strings", "Strings"),
     ("linked lists", "Linked Lists"),
+    ("binary search", "Binary Search"),
     ("trees", "Trees"),
     ("DP", "Dynamic Programming"),
     ("math", "Math"),

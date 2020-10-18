@@ -43,7 +43,7 @@
         </a>
       </div>
       <br>
-      
+
         <div class="category text-light badge badge-dark my-1">
         <a class="text-light" href="{% url 'category_post_list' category=post.category %}">
         <!-- For multiple word categories, break new line -->
@@ -67,6 +67,8 @@
         <img src="{% static 'images/thumbnail_image7.png' %}" width="35" height="13">
         {% elif post.category == "strings" %}
         <p class= "my-1" style = "font-size: 9px; font: verdana;"><b>aabb123</b></p>
+        {% elif post.category == "hashsets" %}
+        <i class="fas fa-table"></i>
         {% elif post.category == "hashmaps" %}
         <i class="fas fa-columns"></i>
         {% elif post.category == "DP" %}
@@ -84,7 +86,7 @@
         {% elif post.category == "tries" %}
         <img src="{% static 'images/thumbnail_image5.png' %}" width="33" height="11">
         {% elif post.category == "binary" %}
-        <p class= "my-1" style = "font-size: 9px; font: verdana;"><b>01101001</b></p>
+        <p class= "my-1" style = "font-size: 8px; font: verdana;"><b>01101001</b></p>
         {% elif post.category == "binary search" %}
         <i class="fas fa-arrows-alt-h"></i>
         {% elif post.category == "heaps" %}
@@ -101,12 +103,21 @@
         <div class="alt_category text-light">
         {% endif %}
 
-        <!-- Set icons for alternate category if exists-->
+
         <a class="text-light" href="{% url 'category_post_list' category=post.alt_category %}">
-        {% if post.alt_category %}
-        <h8>{{post.alt_category}}</h8>
-        <br>
-        {% endif %}
+          <!-- If multiple word categories, break new line -->
+          {% if post.alt_category == "linked lists" %}
+          <h8>linked <br>lists</h8>
+          {% elif post.alt_category == "binary search" %}
+          <h8>binary <br>search</h8>
+          {% endif %}
+          <!-- Otherwise output post alternate category -->
+          {% if post.alt_category and post.alt_category != "linked lists" and post.alt_category != "binary search"%}
+          <h8>{{post.alt_category}}</h8>
+          {% endif %}
+          <br>
+
+        <!-- Set icons for alternate category if exists-->
         {% if post.alt_category == "linked lists" %}
         <img src="{% static 'images/thumbnail_image8.png' %}" width="45" height="12">
         {% elif post.alt_category == "trees" %}
@@ -127,6 +138,8 @@
         <i class="fas fa-angle-double-right"></i>
         {% elif post.alt_category == "strings" %}
         <p class= "my-1" style = "font-size: 9px; font: verdana;"><b>aabb123</b></p>
+        {% elif post.alt_category == "hashsets" %}
+        <i class="fas fa-table"></i>
         {% elif post.alt_category == "recursion" %}
         <i class="fas fa-infinity"></i>
         {% elif post.alt_category == "tries" %}

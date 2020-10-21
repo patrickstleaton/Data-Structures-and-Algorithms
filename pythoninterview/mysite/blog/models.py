@@ -18,6 +18,7 @@ CATEGORY_CHOICES = (
     ("trees", "Trees"),
     ("DP", "Dynamic Programming"),
     ("math", "Math"),
+    ("recursion", "Recursion"),
     ("graphs", "Graphs"),
     ("stacks", "Stacks"),
     ("queues", "Queues"),

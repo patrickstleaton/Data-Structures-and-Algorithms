@@ -27,6 +27,9 @@ CATEGORY_CHOICES = (
     ('hashmaps', 'Hashmap'),
     ('binary', 'Binary'),
     ('hashsets', 'Hashsets'),
+    ('DFS', "Depth First Search"),
+    ('BFS', "Breadth First Search"),
+    ("backtracking", "Backtracking"),
 )
 
 class Post(models.Model):

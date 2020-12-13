@@ -30,6 +30,7 @@ CATEGORY_CHOICES = (
     ('DFS', "Depth First Search"),
     ('BFS', "Breadth First Search"),
     ("backtracking", "Backtracking"),
+    ("greedy", "Greedy"),
 )
 
 class Post(models.Model):

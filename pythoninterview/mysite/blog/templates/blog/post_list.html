@@ -61,6 +61,8 @@
         <!-- Set icons for primary category-->
         {% if post.category == "linked lists" %}
         <img src="{% static 'images/thumbnail_image8.png' %}" width="45" height="12">
+        {% elif post.category == "backtracking" %}
+        <i class="fas fa-trash-restore"></i>
         {% elif post.category == "trees" %}
         <img src="{% static 'images/thumbnail_image5.png' %}" width="16.5" height="16.5">
         {% elif post.category == "arrays" %}
@@ -120,6 +122,8 @@
         <!-- Set icons for alternate category if exists-->
         {% if post.alt_category == "linked lists" %}
         <img src="{% static 'images/thumbnail_image8.png' %}" width="45" height="12">
+        {% elif post.alt_category == "backtracking" %}
+        <i class="fas fa-trash-restore"></i>
         {% elif post.alt_category == "trees" %}
         <img src="{% static 'images/thumbnail_image5.png' %}" width="16.5" height="16.5">
         {% elif post.alt_category == "arrays" %}

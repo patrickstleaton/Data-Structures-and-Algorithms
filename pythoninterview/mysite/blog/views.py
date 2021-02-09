@@ -9,6 +9,9 @@ from blog.models import Post
 class AboutView(TemplateView):
     template_name = 'about.html'
 
+class HomeView(TemplateView):
+    template_name = 'home.html'
+
 class PostListView(ListView):
     model = Post
     def get_queryset(self):
@@ -22,6 +25,7 @@ class CategoryPostListView(ListView):
         alt_category = Post.objects.filter(alt_category = category)
         categories = main_category | alt_category
         return categories
+
 
 class DifficultyPostListView(ListView):
     model = Post

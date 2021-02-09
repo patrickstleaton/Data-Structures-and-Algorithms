@@ -26,8 +26,9 @@ body { padding-top: 120px;
   text-align: center;
 }
 /*a.check:visited {
-  color: red !important;
+  color: grey !important;
 }*/
+
 .category{
   font-size:11px;
 }
@@ -35,8 +36,16 @@ body { padding-top: 120px;
   font-size:11px;
 }
 .card{
-  font-size:14px;
+  transition: 1.5s;
 }
+.card:hover{
+  transform:translateY(-13px);
+}
+
+.card:not(:first-child){
+  margin-down: -10px;
+}
+
 .posttext{
   font-family: verdana;
   font-size: 15px;
@@ -68,7 +77,52 @@ body { padding-top: 120px;
 .form-control{
   height:34px;
 }
+.rotate {
+  margin-top: -7rem;
+  margin-bottom: -7rem;
+  animation: rotation 4.5s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-359deg);
+  }
+}
 
+.home-card-list{
+  display:flex;
+
+}
+.home-card{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 100% !important;
+  width:22% !important;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: -1rem 0 3rem black;
+  transition: 1s;
+  color:white;
+}
+.home-card:hover{
+  transform:translateY(-15px);
+}
+.home-card:hover~.home-card{
+  transform: translateX(15px);
+}
+.home-card:not(:first-child){
+  margin-left: -12px;
+}
+.home{
+  text-align: center ;
+  justify-content: center;
+}
+.intro{
+  font-family: 'Rock Salt', cursive;
+}
 .dropdown-menu {
   background-color: rgb(55, 78, 109);
   border-color: rgb(55, 78, 109);

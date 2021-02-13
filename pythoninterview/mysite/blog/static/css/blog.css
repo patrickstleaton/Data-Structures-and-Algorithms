@@ -106,6 +106,7 @@ body { padding-top: 120px;
   box-shadow: -1rem 0 3rem black;
   transition: 1s;
   color:white;
+  font-size: 14px;
 }
 .home-card:hover{
   transform:translateY(-15px);

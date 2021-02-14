@@ -20,9 +20,9 @@ TEMPLATE_DIR = os.path.join(BASE_DIR, 'blog/templates/blog')
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = [67.205.165.239]
+ALLOWED_HOSTS = ['67.205.165.239']
 
 # Application definition
 INSTALLED_APPS = [

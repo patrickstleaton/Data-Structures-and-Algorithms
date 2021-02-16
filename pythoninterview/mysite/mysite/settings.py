@@ -22,7 +22,7 @@ TEMPLATE_DIR = os.path.join(BASE_DIR, 'blog/templates/blog')
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['67.205.165.239', 'www.algoninjutsu.com', 'algoninjutsu.com']
+ALLOWED_HOSTS = ['67.205.165.239', 'www.algoninjutsu.com', 'algoninjutsu.com', '127.0.0.1']
 
 # Application definition
 INSTALLED_APPS = [

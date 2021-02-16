@@ -15,6 +15,8 @@ body { padding-top: 120px;
 .pops{
   padding-left: 30px;
 }
+
+}
 .counter{
   font-family: 'Rock Salt', cursive;
   font-size: 35px;
@@ -25,9 +27,9 @@ body { padding-top: 120px;
 .postdate{
   text-align: center;
 }
-/*a.check:visited {
+a.check:visited {
   color: grey !important;
-}*/
+}
 
 .category{
   font-size:11px;

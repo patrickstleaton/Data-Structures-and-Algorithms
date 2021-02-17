@@ -5,6 +5,9 @@ h1 {
 h2 {
   font-size: 3.0vh;
 }
+h3 {
+  font-size: 1vmin !important;
+}
 p {
   font-size: 1vmin !important;
 }

@@ -13,16 +13,13 @@ body { padding-top: 120px;
 img {
     max-width:100%;
 }
-.pops{
-  padding-left: 30px;
-}
+
 .postdifficulty{
     font-size: 2.25vmin !important;
 }
 .dropdown-links{
   font-family: 'Special Elite', cursive !important
 }
-
 .counter{
   font-family: 'Rock Salt', cursive;
   font-size: 35px;
@@ -79,7 +76,7 @@ a.check:visited {
   height:75px;
   font-family: 'Rock Salt', cursive;
   font-size: 4% !important;
-  width:99.9%
+  width:100%
 }
 .navbar_links{
   font-size: 14px;
@@ -133,18 +130,21 @@ a.check:visited {
   justify-content: center;
   padding-left: 30px;
 }
+.postlist{
+  padding-left:40px;
+}
 .intro{
   font-family: 'Rock Salt', cursive;
 }
 .dropdown-menu {
   background-color: rgb(55, 78, 109);
   border-color: rgb(55, 78, 109);
-  width:102%;
+  width:100%;
 }
 .nav-link{
     background-color: rgb(55, 78, 109);
     border-color: rgb(55, 78, 109);
-    width:102%;
+    width:100%;
 }
 .navbar-toggler{
   background-color: rgb(55, 78, 109);
@@ -154,7 +154,4 @@ a.check:visited {
   margin-top: 400px;
   width:100%;
   height: 15%;
-}
-.content{
-  padding-right: 5px;
 }

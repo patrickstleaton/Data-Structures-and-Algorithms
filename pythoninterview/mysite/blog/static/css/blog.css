@@ -2,23 +2,18 @@ body { padding-top: 120px;
   font-family: 'Special Elite', cursive;
   background: #ECE9E6;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to bottom, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
-  width:97%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 .logo{
    text-align: center;
    font-size: 16px !important;
 }
 .postlist{
-  padding-left: 4% !important;
+  padding-left: 65px !important;
 }
 img {
     max-width:100%;
-}
-.category{
-    font-size: 1.5vmin !important;
-}
-.alt_category{
-  font-size: 1.5vmin !important;
 }
 .pops{
   padding-left: 30px;
@@ -166,5 +161,5 @@ a.check:visited {
   height: 15%;
 }
 .content{
-  padding-left: 10px;
+  padding-right: 5px;
 }

@@ -2,7 +2,7 @@
 {% load static %}
 {% block content %}
 
-<div class="postlist col-md-12">
+<div class="postlist col-md-12 mx-1">
     <!-- Set question count at top of page -->
     {% if not post_list.count %}
     <h1 class = "counter my-5" align = "center">No Questions Found</h1>
@@ -16,7 +16,7 @@
     {% endif %}
   <div class="row">
   {% for post in post_list %}
-  <div class="card shadow" style="width: 25%">
+  <div class="card shadow" style="width: 19.5%">
     <br>
     <h3 align="center"><a class="check text-dark" style = "font-size:13px;" href="{% url 'post_detail' pk=post.pk %}">
       <b>{{ post.title|safe }}</b></a></h3>
@@ -52,9 +52,11 @@
         <h8>linked <br>lists</h8>
         {% elif post.category == "binary search" %}
         <h8>binary <br>search</h8>
+        {% elif post.category == "backtracking" %}
+        <h8>back- <br>tracking</h8>
         {% endif %}
         <!-- Otherwise output post category -->
-        {% if post.category != "linked lists" and post.category != "binary search"%}
+        {% if post.category != "linked lists" and post.category != "binary search" and post.category != "backtracking"%}
         <h8>{{post.category}}</h8>
         {% endif %}
         <br>
@@ -119,9 +121,11 @@
           <h8>linked <br>lists</h8>
           {% elif post.alt_category == "binary search" %}
           <h8>binary <br>search</h8>
+          {% elif post.alt_category == "backtracking" %}
+          <h8 class="text-align:left"><span>back<br>tracking</span>
           {% endif %}
           <!-- Otherwise output post alternate category -->
-          {% if post.alt_category and post.alt_category != "linked lists" and post.alt_category != "binary search"%}
+          {% if post.alt_category and post.alt_category != "linked lists" and post.alt_category != "binary search" and post.alt_category != "backtracking"%}
           <h8>{{post.alt_category}}</h8>
           {% endif %}
           <br>

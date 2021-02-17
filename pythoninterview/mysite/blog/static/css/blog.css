@@ -35,10 +35,12 @@ a.check:visited {
 }
 
 .category{
-  font-size:11px;
+  font-size:10px;
+  float:left;
 }
 .alt_category{
-  font-size:11px;
+  font-size:10px;
+  float:left;
 }
 .card{
   transition: 1.5s;
@@ -131,7 +133,7 @@ a.check:visited {
   padding-left: 30px;
 }
 .postlist{
-  padding-left:40px;
+  padding-left:20px;
 }
 .intro{
   font-family: 'Rock Salt', cursive;
@@ -152,6 +154,6 @@ a.check:visited {
 }
 .footer{
   margin-top: 400px;
-  width:100%;
+  width:105%;
   height: 15%;
 }

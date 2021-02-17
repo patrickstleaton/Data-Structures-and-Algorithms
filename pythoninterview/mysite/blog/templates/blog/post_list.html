@@ -106,14 +106,13 @@
         </a>
         </div>
         <br>
-
+<br>
         <!-- Make badge tags if alternate category exists-->
         {% if post.alt_category %}
         <div class="alt_category text-light badge badge-dark">
         {% else %}
         <div class="alt_category text-light">
         {% endif %}
-
 
         <a class="text-light" href="{% url 'category_post_list' category=post.alt_category %}">
           <!-- If multiple word categories, break new line -->

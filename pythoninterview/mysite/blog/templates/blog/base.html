@@ -40,7 +40,7 @@
         <span class="nav-link dropdown-toggle" data-toggle = "dropdown">
           <a class = "text-light" href=""><b>Difficulty</b></a></span>
         <span style="color:blue;" class="caret"></span>
-        <ul class="dropdown-menu">
+        <ul class="dropdown-menu dropdown-links">
           <li><a class = "text-white" href="{% url 'difficulty_post_list' difficulty='easy' %}">Easy</a></li>
           <li><a class = "text-white" href="{% url 'difficulty_post_list' difficulty='medium' %}">Medium</a></li>
           <li><a class = "text-white" href="{% url 'difficulty_post_list' difficulty='hard' %}">Hard</a></li>
@@ -50,15 +50,26 @@
         <span class="nav-link dropdown-toggle" data-toggle = "dropdown">
           <a class = "text-light" href=""><b>Categories</b></a></span>
         <span class="caret"></span>
-        <ul class="dropdown-menu">
+        <ul class="dropdown-menu dropdown-links">
           <li><a class = "text-white" href="{% url 'category_post_list' category='arrays' %}">Arrays</a></li>
           <li><a class = "text-white" href="{% url 'category_post_list' category='strings' %}">Strings</a></li>
-          <li><a class = "text-white" href="{% url 'category_post_list' category='hashmaps' %}">Hashmaps</a></li>
           <li><a class = "text-white" href="{% url 'category_post_list' category='linked lists' %}">Linked Lists</a></li>
-          <li><a class = "text-white" href="{% url 'category_post_list' category='DP' %}">DP</a></li>
-          <li><a class = "text-white" href="{% url 'category_post_list' category='math' %}">Math</a></li>
+          <li><a class = "text-white" href="{% url 'category_post_list' category='hashmaps' %}">Hashmaps</a></li>
+          <li><a class = "text-white" href="{% url 'category_post_list' category='hashsets' %}">Hashsets</a></li>
+          <li><a class = "text-white" href="{% url 'category_post_list' category='graphs' %}">Graphs</a></li>
+          <li><a class = "text-white" href="{% url 'category_post_list' category='tries' %}">Tries</a></li>
+          <li><a class = "text-white" href="{% url 'category_post_list' category='heaps' %}">Heaps</a></li>
+          <li><a class = "text-white" href="{% url 'category_post_list' category='heaps' %}">Trees</a></li>
           <li><a class = "text-white" href="{% url 'category_post_list' category='stacks' %}">Stacks</a></li>
-          <li><a class = "text-white" href="{% url 'category_post_list' category='queues' %}">Queues</a></li>
+          <li><a class = "text-white" href="{% url 'category_post_list' category='DP' %}">DP</a></li>
+          <li><a class = "text-white" href="{% url 'category_post_list' category='recursion' %}">Recursion</a></li>
+          <li><a class = "text-white" href="{% url 'category_post_list' category='recursion' %}">Backtracking</a></li>
+          <li><a class = "text-white" href="{% url 'category_post_list' category='math' %}">Math</a></li>
+          <li><a class = "text-white" href="{% url 'category_post_list' category='binary' %}">Binary</a></li>
+          <li><a class = "text-white" href="{% url 'category_post_list' category='binary search' %}">Binary Search</a></li>
+          <li><a class = "text-white" href="{% url 'category_post_list' category='DFS' %}">DFS</a></li>
+          <li><a class = "text-white" href="{% url 'category_post_list' category='BFS' %}">BFS</a></li>
+          <li><a class = "text-white" href="{% url 'category_post_list' category='greedy' %}">Greedy</a></li>
         </ul>
       </li>
             <li>

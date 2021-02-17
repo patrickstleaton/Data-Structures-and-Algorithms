@@ -1,8 +1,7 @@
 body { padding-top: 120px;
   font-family: 'Special Elite', cursive;
   background: #ECE9E6;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to bottom, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
   width:97%;
 }
 .logo{
@@ -16,6 +15,9 @@ body { padding-top: 120px;
   padding-left: 30px;
 }
 
+.dropdown-links{
+  font-family: 'Special Elite', cursive
+}
 
 .counter{
   font-family: 'Rock Salt', cursive;
@@ -49,22 +51,27 @@ a.check:visited {
 }
 
 .posttext{
-  font-family: verdana;
-  font-size: 15px;
+  font-family: Calibri;
+  font-size: 2.5vmin !important;
 }
 .postdescription{
-  font-family: verdana;
+  font-family: Calibri;
+  font-size: 2.5vmin !important;
+
 }
 .postexplanation{
-  font-family: verdana;
-  font-size: 15px;
+  font-family: Calibri;
+  font-size: 2.5vmin !important;
+
 }
 .additionalnotes{
-  font-family: verdana;
-  font-size: 15px;
+  font-family: Calibri;
+  font-size: 2.5vmin !important;
+
 }
 .postlist{
-  padding-left:15px;
+  padding-left:12px;
+
 }
 .navbar{
   float:left;
@@ -108,7 +115,7 @@ a.check:visited {
   box-shadow: -1rem 0 3rem black;
   transition: 1s;
   color:white;
-  font-size: 14px;
+  font-size: 2vmin !important;
 }
 .home-card:hover{
   transform:translateY(-15px);

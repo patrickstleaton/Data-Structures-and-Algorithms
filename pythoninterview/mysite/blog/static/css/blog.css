@@ -35,11 +35,11 @@ a.check:visited {
 }
 
 .category{
-  font-size:10px;
+  font-size:9px;
   float:left;
 }
 .alt_category{
-  font-size:10px;
+  font-size:9px;
   float:left;
 }
 .card{
@@ -121,9 +121,6 @@ a.check:visited {
 .home-card:hover{
   transform:translateY(-15px);
 }
-.home-card:hover~.home-card{
-  transform: translateX(15px);
-}
 .home-card:not(:first-child){
   margin-left: -12px;
 }
@@ -133,7 +130,7 @@ a.check:visited {
   padding-left: 30px;
 }
 .postlist{
-  padding-left:20px;
+  padding-left:30px;
 }
 .intro{
   font-family: 'Rock Salt', cursive;

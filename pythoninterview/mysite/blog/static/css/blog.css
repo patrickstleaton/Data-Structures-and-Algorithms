@@ -11,12 +11,23 @@ body { padding-top: 120px;
 .postlist{
   padding-left: 4% !important;
 }
+img {
+    max-width:100%;
+}
+.category{
+    font-size: 1.5vmin !important;
+}
+.alt_category{
+  font-size: 1.5vmin !important;
+}
 .pops{
   padding-left: 30px;
 }
-
+.postdifficulty{
+    font-size: 2.25vmin !important;
+}
 .dropdown-links{
-  font-family: 'Special Elite', cursive
+  font-family: 'Special Elite', cursive !important
 }
 
 .counter{
@@ -52,7 +63,7 @@ a.check:visited {
 
 .posttext{
   font-family: Calibri;
-  font-size: 2.5vmin !important;
+  font-size: 2vmin !important;
 }
 .postdescription{
   font-family: Calibri;
@@ -61,7 +72,7 @@ a.check:visited {
 }
 .postexplanation{
   font-family: Calibri;
-  font-size: 2.5vmin !important;
+  font-size: 2.25vmin !important;
 
 }
 .additionalnotes{
@@ -78,6 +89,7 @@ a.check:visited {
   height:75px;
   font-family: 'Rock Salt', cursive;
   font-size: 4% !important;
+  width:99.9%
 }
 .navbar_links{
   font-size: 14px;
@@ -87,8 +99,8 @@ a.check:visited {
   height:34px;
 }
 .rotate {
-  margin-top: -7rem;
-  margin-bottom: -7rem;
+  margin-top: -6rem;
+  margin-bottom: -4rem;
   animation: rotation 4.5s infinite linear;
 }
 @keyframes rotation {

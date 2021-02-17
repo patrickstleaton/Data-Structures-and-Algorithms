@@ -11,7 +11,7 @@
     <h1 class = "counter my-3" align="center">{{post_list.count}} Question</h1>
     <br><br>
     {% else %}
-    <h1 class = "counter my-3" align="center">All {{post_list.count}} Questions</h1>
+    <h1 class = "counter my-3" align="center">{{post_list.count}} Questions</h1>
     <br><br>
     {% endif %}
   <div class="row">
@@ -76,10 +76,14 @@
         <i class="fas fa-columns"></i>
         {% elif post.category == "DP" %}
         <i class="my-1 fas fa-sort-amount-up"></i>
+        {% elif post.category == "DFS" %}
+        <i class="fas fa-arrows-alt-v"></i>
+        {% elif post.category == "BFS" %}
+        <i class="fas fa-arrows-alt-h"></i>
         {% elif post.category == "math" %}
         <i class="fas fa-calculator"></i>
         {% elif post.category == "graphs" %}
-        <i class="fas fa-th"></i>
+        <i class="my-1 fas fa-share-alt"></i>
         {% elif post.category == "stacks" %}
         <i class="fas fa-angle-double-up"></i>
         {% elif post.category == "queues" %}
@@ -91,7 +95,9 @@
         {% elif post.category == "binary" %}
         <p class= "my-1" style = "font-size: 8px; font: verdana;"><b>01101001</b></p>
         {% elif post.category == "binary search" %}
-        <i class="fas fa-arrows-alt-h"></i>
+        <i class="fas fa-low-vision"></i>
+        {% elif post.category == "greedy" %}
+        <i class="fas fa-chess-board"></i>
         {% elif post.category == "heaps" %}
         <img src="{% static 'images/thumbnail_image5.png' %}" width="16.5" height="16.5">
         {% endif %}
@@ -136,7 +142,7 @@
         {% elif post.alt_category == "math" %}
         <i class="fas fa-calculator"></i>
         {% elif post.alt_category == "graphs" %}
-        <i class="fas fa-th fa-2x"></i>
+        <i class="my-1 fas fa-share-alt"></i>
         {% elif post.alt_category == "stacks" %}
         <i class="fas fa-angle-double-up"></i>
         {% elif post.alt_category == "queues" %}
@@ -153,8 +159,14 @@
         <img src="{% static 'images/thumbnail_image5.png' %}" width="16.5" height="16.5">
         {% elif post.alt_category == "binary" %}
         <p class= "my-1" style = "font-size: 9px; font: verdana;"><b>01101001</b></p>
-        {% elif post.alt_category == "binary search" %}
+        {% elif post.alt_category == "BFS" %}
         <i class="fas fa-arrows-alt-h"></i>
+        {% elif post.alt_category == "DFS" %}
+        <i class="fas fa-arrows-alt-v"></i>
+        {% elif post.alt_category == "greedy" %}
+        <i class="fas fa-chess-board"></i>
+        {% elif post.alt_category == "binary search" %}
+        <i class="fas fa-low-vision"></i>
         {% elif not post.alt_category%}
         {% endif %}
         </a>

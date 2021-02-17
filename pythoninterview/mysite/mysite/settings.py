@@ -36,7 +36,6 @@ INSTALLED_APPS = [
     'ckeditor',
 ]
 
-
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -111,15 +110,18 @@ USE_L10N = True
 
 USE_TZ = True
 
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
+####
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
-STATIC_URL = '/static/'
+#STATIC_URL = '/static/'
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static')
-]
-STATIC_ROOT = os.path.join(BASE_DIR, 'blog/static')
+#STATICFILES_DIRS = [
+    #os.path.join(BASE_DIR, 'static'),
+#]
+#STATIC_ROOT = os.path.join(BASE_DIR, 'blog/static')
 
 LOGIN_REDIRECT_URL = '/'

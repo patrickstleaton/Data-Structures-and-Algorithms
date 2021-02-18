@@ -15,6 +15,9 @@ body {
 img {
     max-width:100%;
 }
+.small-img{
+
+}
 
 .postdifficulty{
     font-size: 1.9vmin !important;
@@ -89,6 +92,7 @@ a.check:visited {
 }
 .form-control{
   height:34px;
+  width: 14rem !important;
 }
 .rotate {
   margin-top: -6rem;
@@ -113,7 +117,7 @@ a.check:visited {
   position: relative;
   flex-direction: column;
 
-  width:20% !important;
+  width:22% !important;
   padding: 2rem;
   border-radius: 16px;
   box-shadow: -1rem 0 3rem black;
@@ -132,10 +136,9 @@ a.check:visited {
 }
 .home{
   text-align: center ;
-  padding-left: 4rem;
 }
 .pops{
-    padding-left:15px;
+    padding-left:5px;
 }
 .content{
   padding-top:9rem;

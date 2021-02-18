@@ -97,7 +97,7 @@ a.check:visited {
 .rotate {
   margin-top: -3rem;
   margin-bottom:-3rem;
-  max-width: 65%;
+  max-width: 70%;
   animation: rotation 4.5s infinite linear;
 }
 @keyframes rotation {

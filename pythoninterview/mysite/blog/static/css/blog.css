@@ -2,8 +2,8 @@ body {
   font-family: 'Special Elite', cursive;
   background: #ECE9E6;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to bottom, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
-  max-width: 100%;
   overflow-x: hidden;
+  max-width: 98%;
 }
 
 .navbar-brand{
@@ -83,7 +83,7 @@ a.check:visited {
   float:left;
   font-family: 'Rock Salt', cursive;
   font-size: 4% !important;
-  width:100%;
+  width:102%;
 
 }
 .navbar_links{
@@ -116,7 +116,7 @@ a.check:visited {
   display: flex;
   position: relative;
   flex-direction: column;
-
+height: 100% !important;
   width:22% !important;
   padding: 2rem;
   border-radius: 16px;
@@ -137,9 +137,7 @@ a.check:visited {
 .home{
   text-align: center ;
 }
-.pops{
-    padding-left:5px;
-}
+
 .content{
   padding-top:9rem;
 }
@@ -168,6 +166,6 @@ a.check:visited {
 }
 .footer{
   margin-top: 400px;
-  width:100%;
+  width:102%;
   height: 15%;
 }

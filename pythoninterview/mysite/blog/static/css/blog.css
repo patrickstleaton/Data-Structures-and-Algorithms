@@ -1,8 +1,8 @@
-body { padding-top: 120px;
+body {
   font-family: 'Special Elite', cursive;
   background: #ECE9E6;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to bottom, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
-  max-width: 98%;
+  max-width: 100%;
   overflow-x: hidden;
 }
 .logo{
@@ -81,10 +81,9 @@ a.check:visited {
 
 .navbar{
   float:left;
-  height:75px;
   font-family: 'Rock Salt', cursive;
   font-size: 4% !important;
-  width:99.7%
+  width:100%
 }
 .navbar_links{
   font-size: 14px;
@@ -141,6 +140,9 @@ a.check:visited {
 }
 .pops{
     padding-left:25px;
+}
+.content{
+  padding-top:9rem;
 }
 
 .med-viewport{

@@ -6,7 +6,7 @@
     <!-- Set question count at top of page -->
     {% if not post_list.count %}
     <h1 class = "counter my-5" align = "center">No Questions Found</h1>
-    <br><br><br><br>
+    <br><br><br><br><br>
     {% elif post_list.count == 1 %}
     <h1 class = "counter my-3" align="center">{{post_list.count}} Question</h1>
     <br><br>
@@ -63,13 +63,13 @@
 
         <!-- Set icons for primary category-->
         {% if post.category == "linked lists" %}
-        <img src="{% static 'images/thumbnail_image8.png' %}" width="45" height="12">
+        <img class="img-fluid" src="{% static 'images/thumbnail_image8.png' %}" width="45" height="12">
         {% elif post.category == "backtracking" %}
         <i class="fas fa-trash-restore"></i>
         {% elif post.category == "trees" %}
-        <img src="{% static 'images/thumbnail_image5.png' %}" width="12.5" height="12.5">
+        <img class="img-fluid" src="{% static 'images/thumbnail_image5.png' %}" width="16.5" height="16.5">
         {% elif post.category == "arrays" %}
-        <img src="{% static 'images/thumbnail_image7.png' %}" width="35" height="13">
+        <img class="img-fluid" src="{% static 'images/thumbnail_image7.png' %}" width="35" height="13">
         {% elif post.category == "strings" %}
         <p class= "my-1" style = "font-size: 1.25vmin; font: verdana;"><b>aabb123</b></p>
         {% elif post.category == "hashsets" %}
@@ -93,7 +93,7 @@
         {% elif post.category == "recursion" %}
         <i class="fas fa-infinity"></i>
         {% elif post.category == "tries" %}
-        <img src="{% static 'images/thumbnail_image6.png' %}" width="20" height="18">
+        <img class="img-fluid" src="{% static 'images/thumbnail_image6.png' %}" width="25.3" height="22">
         {% elif post.category == "binary" %}
         <p class= "my-1" style = "font-size: 1.25vmin; font: verdana;"><b>01101001</b></p>
         {% elif post.category == "binary search" %}
@@ -101,7 +101,7 @@
         {% elif post.category == "greedy" %}
         <i class="fas fa-chess-board"></i>
         {% elif post.category == "heaps" %}
-        <img src="{% static 'images/thumbnail_image5.png' %}" width="12.5" height="12.5">
+        <img class="img-fluid"  src="{% static 'images/thumbnail_image5.png' %}" width="16.5" height="16.5">
         {% endif %}
         </a>
         </div>
@@ -131,13 +131,13 @@
 
         <!-- Set icons for alternate category if exists-->
         {% if post.alt_category == "linked lists" %}
-        <img src="{% static 'images/thumbnail_image8.png' %}" width="45" height="12">
+        <img class="img-fluid"  src="{% static 'images/thumbnail_image8.png' %}" width="45" height="12">
         {% elif post.alt_category == "backtracking" %}
         <i class="fas fa-trash-restore"></i>
         {% elif post.alt_category == "trees" %}
-        <img src="{% static 'images/thumbnail_image5.png' %}" width="12.5" height="12.5">
+        <img class="img-fluid"  src="{% static 'images/thumbnail_image5.png' %}" width="16.5" height="16.5">
         {% elif post.alt_category == "arrays" %}
-        <img src="{% static 'images/thumbnail_image7.png' %}" width="35" height="13">
+        <img class="img-fluid"  src="{% static 'images/thumbnail_image7.png' %}" width="35" height="13">
         {% elif post.alt_category == "hashmaps" %}
         <i class="fas fa-columns"></i>
         {% elif post.alt_category == "DP" %}
@@ -157,9 +157,9 @@
         {% elif post.alt_category == "recursion" %}
         <i class="fas fa-infinity"></i>
         {% elif post.alt_category == "tries" %}
-        <img src="{% static 'images/thumbnail_image6.png' %}" width="20" height="18">
+        <img class="img-fluid"  src="{% static 'images/thumbnail_image6.png' %}" width="25.3" height="22">
         {% elif post.alt_category == "heaps" %}
-        <img src="{% static 'images/thumbnail_image5.png' %}" width="12.5" height="12.5">
+        <img class="img-fluid"  src="{% static 'images/thumbnail_image5.png' %}" width="16.5" height="16.5">
         {% elif post.alt_category == "binary" %}
         <p class= "my-1" style = "font-size: 1.25vmin; font: verdana;"><b>01101001</b></p>
         {% elif post.alt_category == "BFS" %}

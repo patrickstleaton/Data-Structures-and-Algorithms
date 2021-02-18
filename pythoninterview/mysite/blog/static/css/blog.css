@@ -89,7 +89,6 @@ a.check:visited {
 }
 .form-control{
   height:34px;
-  width:17rem !important;
 }
 .rotate {
   margin-top: -6rem;
@@ -113,6 +112,7 @@ a.check:visited {
   display: flex;
   position: relative;
   flex-direction: column;
+
   width:20% !important;
   padding: 2rem;
   border-radius: 16px;
@@ -135,7 +135,7 @@ a.check:visited {
   padding-left: 4rem;
 }
 .pops{
-    padding-left:25px;
+    padding-left:15px;
 }
 .content{
   padding-top:9rem;

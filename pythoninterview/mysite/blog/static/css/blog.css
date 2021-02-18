@@ -114,7 +114,6 @@ a.check:visited {
   display: flex;
   position: relative;
   flex-direction: column;
-  height: 100% !important;
   width:22% !important;
   padding: 1.5rem;
   border-radius: 16px;
@@ -126,6 +125,9 @@ a.check:visited {
 .home-card:hover{
   transform:translateY(-15px);
 }
+.home-card:hover~.home-card{
+  transform: translateX(10px);
+}
 .home-card:not(:first-child){
   margin-left: -12px;
 }
@@ -133,9 +135,6 @@ a.check:visited {
   text-align: center ;
   justify-content: center;
   padding-left: 30px;
-}
-.postlist{
-  padding-left:2rem;
 }
 .pops{
     padding-left:25px;

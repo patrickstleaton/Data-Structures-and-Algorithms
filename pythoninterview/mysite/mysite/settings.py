@@ -17,7 +17,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATE_DIR = os.path.join(BASE_DIR, 'blog/templates/blog')
 # SECURITY WARNING: keep the secret key used in production secret!
 DEBUG = False
-
 ALLOWED_HOSTS = ['67.205.165.239', 'www.algoninjutsu.com', 'algoninjutsu.com', '127.0.0.1']
 
 # Application definition

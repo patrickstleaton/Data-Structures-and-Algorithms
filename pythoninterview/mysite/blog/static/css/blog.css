@@ -41,11 +41,11 @@ a.check:visited {
 
 .category{
   float:left;
-  font-size: 1.5vmin !important;
+  font-size: 1.4vmin !important;
 
 }
 .alt_category{
-  font-size: 1.5vmin !important;
+  font-size: 1.4vmin !important;
   float:left;
 }
 .card{

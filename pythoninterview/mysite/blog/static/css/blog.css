@@ -7,7 +7,7 @@ body { padding-top: 120px;
 }
 .logo{
    text-align: center;
-   font-size: 16px !important;
+   font-size: 15px !important;
 }
 
 img {
@@ -130,7 +130,7 @@ a.check:visited {
   padding-left: 30px;
 }
 .postlist{
-  padding-left:30px;
+  padding-left:35px;
 }
 .pops{
     padding-left:25px;

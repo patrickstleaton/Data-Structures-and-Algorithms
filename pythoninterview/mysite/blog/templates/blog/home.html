@@ -1,11 +1,12 @@
 {% extends 'blog/base.html' %}
 {% block content %}
 {% load static %}
-<div class="home container" align="center">
+<div class="home col-sm-12 container" align="center">
 <h1 class = "intro">AlgoNinjutsu</h1>
 <br>
 <h2 class = "">Become an algorithms ninja.</h2>
-
+<img align src="{% static 'images/thumbnail_image1.png' %}" class="img-fluid rotate" alt="Responsive image"
+width="400" height="400">
 
 <h1 class = "intro">Questions</h1>
 <br>
@@ -13,7 +14,7 @@
 <br>
 <br>
 
-<section class = "home-card-list col-xl-12">
+<section class = "home-card-list">
   <article class="home-card" style="background-color:	rgb(112,128,144);">
     <header class = "home-card-header">
       <a class = "text-white" href="{% url 'category_post_list' category='arrays' %}">

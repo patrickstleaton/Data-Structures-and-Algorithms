@@ -91,13 +91,13 @@ a.check:visited {
   color:black !important;
 }
 .form-control{
-  height:34px;
+  height:auto;
   width: 14rem !important;
 }
 .rotate {
   margin-top: -3rem;
   margin-bottom:-3rem;
-  max-width: 70%;
+  max-width: 80%;
   animation: rotation 4.5s infinite linear;
 }
 @keyframes rotation {

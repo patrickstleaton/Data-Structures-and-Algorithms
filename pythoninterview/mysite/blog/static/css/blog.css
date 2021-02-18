@@ -95,10 +95,9 @@ a.check:visited {
   width: 14rem !important;
 }
 .rotate {
-  margin-top: -10rem;
-  margin-bottom:-10rem;
-  padding-left: -10rem;
-  padding-right:-10rem;
+  margin-top: -3rem;
+  margin-bottom:-3rem;
+  max-width: 50%;
   animation: rotation 4.5s infinite linear;
 }
 @keyframes rotation {

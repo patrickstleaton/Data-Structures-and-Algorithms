@@ -6,10 +6,15 @@ body { padding-top: 120px;
   overflow-x: hidden;
 }
 .logo{
-   text-align: center;
-   font-size: 15px !important;
+   text-align: left !important;
 }
 
+.navbar-brand{
+  float:left;
+  text-align:left;
+  font-size: 16px !important;
+
+}
 img {
     max-width:100%;
 }
@@ -154,6 +159,6 @@ a.check:visited {
 }
 .footer{
   margin-top: 400px;
-  width:102%;
+  width:103%;
   height: 15%;
 }

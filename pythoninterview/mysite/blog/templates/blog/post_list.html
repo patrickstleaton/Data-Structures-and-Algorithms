@@ -53,7 +53,7 @@
         {% elif post.category == "binary search" %}
         <h8>binary <br>search</h8>
         {% elif post.category == "backtracking" %}
-        <h8>back- <br>tracking</h8>
+        <h8>back <br>tracking</h8>
         {% endif %}
         <!-- Otherwise output post category -->
         {% if post.category != "linked lists" and post.category != "binary search" and post.category != "backtracking"%}
@@ -63,7 +63,7 @@
 
         <!-- Set icons for primary category-->
         {% if post.category == "linked lists" %}
-        <img class="img-fluid" src="{% static 'images/thumbnail_image8.png' %}" width="25" height="15">
+        <img class="img-fluid" src="{% static 'images/thumbnail_image8.png' %}" width="30" height="15">
         {% elif post.category == "backtracking" %}
         <i class="fas fa-trash-restore"></i>
         {% elif post.category == "trees" %}
@@ -131,7 +131,7 @@
 
         <!-- Set icons for alternate category if exists-->
         {% if post.alt_category == "linked lists" %}
-        <img class="img-fluid"  src="{% static 'images/thumbnail_image8.png' %}" width="25" height="15">
+        <img class="img-fluid"  src="{% static 'images/thumbnail_image8.png' %}" width="35" height="15">
         {% elif post.alt_category == "backtracking" %}
         <i class="fas fa-trash-restore"></i>
         {% elif post.alt_category == "trees" %}

@@ -40,11 +40,12 @@ a.check:visited {
 }
 
 .category{
-  font-size:9px;
   float:left;
+  font-size: 1.5vmin !important;
+
 }
 .alt_category{
-  font-size:9px;
+  font-size: 1.5vmin !important;
   float:left;
 }
 .card{
@@ -141,6 +142,10 @@ a.check:visited {
 .pops{
     padding-left:25px;
 }
+
+.med-viewport{
+  font-size: 1.75vmin !important;
+}
 .intro{
   font-family: 'Rock Salt', cursive;
 }
@@ -157,7 +162,8 @@ a.check:visited {
 .navbar-toggler{
   background-color: rgb(55, 78, 109);
   border-color: rgb(55, 78, 109);
-  padding-right:50px;
+  width:45px;
+  float:left;
 }
 .footer{
   margin-top: 400px;

@@ -41,11 +41,11 @@ a.check:visited {
 
 .category{
   float:left;
-  font-size: 1.4vmin !important;
+  font-size: 1.3vmin !important;
 
 }
 .alt_category{
-  font-size: 1.4vmin !important;
+  font-size: 1.3vmin !important;
   float:left;
 }
 .card{
@@ -97,7 +97,7 @@ a.check:visited {
 .rotate {
   margin-top: -3rem;
   margin-bottom:-3rem;
-  max-width: 80%;
+  max-width: 77%;
   animation: rotation 4.5s infinite linear;
 }
 @keyframes rotation {

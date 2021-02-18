@@ -83,7 +83,7 @@ a.check:visited {
   height:75px;
   font-family: 'Rock Salt', cursive;
   font-size: 4% !important;
-  width:100%
+  width:99.7%
 }
 .navbar_links{
   font-size: 14px;
@@ -136,6 +136,7 @@ a.check:visited {
 }
 .postlist{
   padding-left:32px;
+  width:100%;
 }
 .pops{
     padding-left:25px;
@@ -156,6 +157,7 @@ a.check:visited {
 .navbar-toggler{
   background-color: rgb(55, 78, 109);
   border-color: rgb(55, 78, 109);
+  padding-right:50px;
 }
 .footer{
   margin-top: 400px;

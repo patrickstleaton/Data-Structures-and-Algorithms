@@ -17,7 +17,7 @@ img {
 }
 
 .postdifficulty{
-    font-size: 2.25vmin !important;
+    font-size: 1.9vmin !important;
 }
 .dropdown-links{
   font-family: 'Special Elite', cursive !important
@@ -80,7 +80,7 @@ a.check:visited {
   float:left;
   font-family: 'Rock Salt', cursive;
   font-size: 4% !important;
-  width:102%
+  width:100%;
 
 }
 .navbar_links{
@@ -89,7 +89,7 @@ a.check:visited {
 }
 .form-control{
   height:34px;
-  width:20rem !important;
+  width:17rem !important;
 }
 .rotate {
   margin-top: -6rem;
@@ -113,8 +113,8 @@ a.check:visited {
   display: flex;
   position: relative;
   flex-direction: column;
-  width:22% !important;
-  padding: 1.5rem;
+  width:20% !important;
+  padding: 2rem;
   border-radius: 16px;
   box-shadow: -1rem 0 3rem black;
   transition: 1s;
@@ -132,8 +132,7 @@ a.check:visited {
 }
 .home{
   text-align: center ;
-  justify-content: center;
-  padding-left: 30px;
+  padding-left: 4rem;
 }
 .pops{
     padding-left:25px;
@@ -166,6 +165,6 @@ a.check:visited {
 }
 .footer{
   margin-top: 400px;
-  width:102%;
+  width:100%;
   height: 15%;
 }

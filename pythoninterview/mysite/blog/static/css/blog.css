@@ -3,7 +3,7 @@ body {
   background: #ECE9E6;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to bottom, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
   overflow-x: hidden;
-  max-width: 95%;
+  max-width: 100%;
 }
 
 .navbar-brand{
@@ -83,7 +83,7 @@ a.check:visited {
   float:left;
   font-family: 'Rock Salt', cursive;
   font-size: 4% !important;
-  width:105%;
+  width:100%;
 
 }
 .navbar_links{
@@ -166,6 +166,6 @@ height: 100% !important;
 }
 .footer{
   margin-top: 400px;
-  width:105%;
+  width:100%;
   height: 15%;
 }

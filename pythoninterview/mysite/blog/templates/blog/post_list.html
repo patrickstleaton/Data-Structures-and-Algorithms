@@ -6,7 +6,7 @@
     <!-- Set question count at top of page -->
     {% if not post_list.count %}
     <h1 class = "counter my-5" align = "center">No Questions Found</h1>
-    <br><br><br><br><br>
+    <br><br><br><br><br><br>
     {% elif post_list.count == 1 %}
     <h1 class = "counter my-3" align="center">{{post_list.count}} Question</h1>
     <br><br>
@@ -63,7 +63,7 @@
 
         <!-- Set icons for primary category-->
         {% if post.category == "linked lists" %}
-        <img class="img-fluid" src="{% static 'images/thumbnail_image8.png' %}" width="45" height="12">
+        <img class="img-fluid my-1" src="{% static 'images/thumbnail_image8.png' %}" width="45" height="12">
         {% elif post.category == "backtracking" %}
         <i class="fas fa-trash-restore"></i>
         {% elif post.category == "trees" %}

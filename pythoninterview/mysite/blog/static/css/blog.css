@@ -2,7 +2,7 @@ body { padding-top: 120px;
   font-family: 'Special Elite', cursive;
   background: #ECE9E6;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to bottom, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
-  max-width: 100%;
+  max-width: 98%;
   overflow-x: hidden;
 }
 .logo{
@@ -130,7 +130,10 @@ a.check:visited {
   padding-left: 30px;
 }
 .postlist{
-  padding-left:30px;
+  padding-left:40px;
+}
+.pops{
+    padding-left:60px;
 }
 .intro{
   font-family: 'Rock Salt', cursive;
@@ -151,6 +154,6 @@ a.check:visited {
 }
 .footer{
   margin-top: 400px;
-  width:105%;
+  width:102%;
   height: 15%;
 }

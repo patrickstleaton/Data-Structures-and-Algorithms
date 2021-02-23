@@ -9,5 +9,5 @@ path('questions/', views.PostListView.as_view(), name='post_list'),
 path('questions/category/<str:category>/', views.CategoryPostListView.as_view(), name='category_post_list'),
 path('questions/difficulty/<str:difficulty>/', views.DifficultyPostListView.as_view(), name='difficulty_post_list'),
 path('about/', views.AboutView.as_view(), name='about'),
-path('post/<int:pk>/', views.PostDetailView.as_view(), name='post_detail'),
+path('questions/post/<int:pk>/', views.PostDetailView.as_view(), name='post_detail'),
 ]

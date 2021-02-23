@@ -2,6 +2,7 @@ from django.db import models
 from django.utils import timezone
 from django.urls import reverse
 from ckeditor.fields import RichTextField
+import random
 # Create your models here.
 
 DIFFICULTY_CHOICES = (

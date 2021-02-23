@@ -1,5 +1,4 @@
-
-
+import random
 from django.shortcuts import render, get_object_or_404, redirect
 from django.utils import timezone
 from django.views.generic import (TemplateView, ListView, DetailView)
@@ -40,6 +39,9 @@ class CategoryPostListView(ListView):
         questions = Post.objects.filter(title__contains = category)
         categories = main_category | alt_category | questions
         return categories
+
+class RandomView(DetailView):
+    model = Post
 
 
 class DifficultyPostListView(ListView):

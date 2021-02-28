@@ -40,9 +40,6 @@ class CategoryPostListView(ListView):
         categories = main_category | alt_category | questions
         return categories
 
-class RandomView(DetailView):
-    model = Post
-
 
 class DifficultyPostListView(ListView):
     model = Post

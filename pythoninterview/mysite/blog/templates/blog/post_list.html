@@ -45,7 +45,7 @@
       </div>
       <br>
 
-        <div class="category text-light badge badge-dark my-1">
+        <div class="category text-light badge badge-dark">
         <a class="text-light" href="{% url 'category_post_list' category=post.category %}">
         <!-- For multiple word categories, break new line -->
         {% if post.category == "linked lists" %}
@@ -63,7 +63,7 @@
 
         <!-- Set icons for primary category-->
         {% if post.category == "linked lists" %}
-        <img class="img-fluid" src="{% static 'images/thumbnail_image8.png' %}" width="30" height="15">
+        <img class="img-fluid" src="{% static 'images/thumbnail_image8.png' %}" width="28" height="14">
         {% elif post.category == "backtracking" %}
         <i class="fas fa-trash-restore"></i>
         {% elif post.category == "trees" %}

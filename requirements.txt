@@ -50,7 +50,7 @@ stripe==2.42.0
 Twisted==20.3.0
 txaio==20.4.1
 Unidecode==1.1.1
-urllib3==1.25.8
+urllib3==1.26.5
 wagtail==2.8
 webencodings==0.5.1
 Willow==1.3

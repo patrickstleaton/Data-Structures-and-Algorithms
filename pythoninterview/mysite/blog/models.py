@@ -32,6 +32,10 @@ CATEGORY_CHOICES = (
     ('BFS', "Breadth First Search"),
     ("backtracking", "Backtracking"),
     ("greedy", "Greedy"),
+    ("topological sort", "Topological Sort"),
+    ("two pointers", "Two Pointers"),
+    ("sliding window", "Sliding Window"),
+    ("prefix sum", "Prefix Sum"),
 )
 
 class Post(models.Model):

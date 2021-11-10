@@ -15,9 +15,6 @@ body {
 img {
     max-width:100%;
 }
-.small-img{
-
-}
 
 .postdifficulty{
     font-size: 1.9vmin !important;
@@ -117,7 +114,6 @@ a.check:visited {
   display: flex;
   position: relative;
   flex-direction: column;
-height: 100% !important;
   width:22% !important;
   padding: 2rem;
   border-radius: 16px;
@@ -133,10 +129,7 @@ height: 100% !important;
   transform: translateX(10px);
 }
 .home-card:not(:first-child){
-  margin-left: -12px;
-}
-.home{
-  text-align: center ;
+  margin-left: -4px;
 }
 
 .content{

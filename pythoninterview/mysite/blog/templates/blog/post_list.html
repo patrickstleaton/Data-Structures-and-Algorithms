@@ -89,7 +89,7 @@
         {% elif post.category == "stacks" %}
         <i class="fas fa-angle-double-up"></i>
         {% elif post.category == "queues" %}
-        <i class="fas fa-angle-double-right"></i>
+        <i class="fas fa-angle-double-left"></i>
         {% elif post.category == "recursion" %}
         <i class="fas fa-infinity"></i>
         {% elif post.category == "tries" %}
@@ -102,11 +102,18 @@
         <i class="fas fa-chess-board"></i>
         {% elif post.category == "heaps" %}
         <img class="img-fluid"  src="{% static 'images/thumbnail_image5.png' %}" width="10.9" height="10.9">
+        {% elif post.category == "topological sort" %}
+        <i class="fas fa-leaf"></i>
+        {% elif post.category == "two pointers" %}
+        <i class="far fa-hand-point-down"></i>
+        {% elif post.category == "prefix sum" %}
+        <i class="my-1 fas fa-bowling-ball"></i>
+        {% elif post.category == "sliding window" %}
+        <i class="far fa-square"></i>
         {% endif %}
         </a>
         </div>
-        <br>
-<br>
+        <br><br><h1></h1>
         <!-- Make badge tags if alternate category exists-->
         {% if post.alt_category %}
         <div class="alt_category text-light badge badge-dark">
@@ -149,7 +156,7 @@
         {% elif post.alt_category == "stacks" %}
         <i class="fas fa-angle-double-up"></i>
         {% elif post.alt_category == "queues" %}
-        <i class="fas fa-angle-double-right"></i>
+        <i class="fas fa-angle-double-left"></i>
         {% elif post.alt_category == "strings" %}
         <p class= "my-1" style = "font-size: 1.25vmin; font: verdana;"><b>aabb123</b></p>
         {% elif post.alt_category == "hashsets" %}
@@ -170,6 +177,14 @@
         <i class="fas fa-chess-board"></i>
         {% elif post.alt_category == "binary search" %}
         <i class="fas fa-low-vision"></i>
+        {% elif post.alt_category == "topological sort" %}
+        <i class="fas fa-leaf"></i>
+        {% elif post.alt_category == "two pointers" %}
+        <i class="far fa-hand-point-down"></i>
+        {% elif post.alt_category == "prefix sum" %}
+        <i class="fas fa-bowling-ball"></i>
+        {% elif post.alt_category == "sliding window" %}
+        <i class="far fa-square"></i>
         {% elif not post.alt_category%}
         {% endif %}
         </a>

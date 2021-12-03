@@ -115,6 +115,7 @@ a.check:visited {
   position: relative;
   flex-direction: column;
   width:22% !important;
+  height: 10rem;
   padding: 2rem;
   border-radius: 16px;
   box-shadow: -1rem 0 3rem black;

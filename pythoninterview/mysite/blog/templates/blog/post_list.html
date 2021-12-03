@@ -54,9 +54,16 @@
         <h8>binary <br>search</h8>
         {% elif post.category == "backtracking" %}
         <h8>back <br>tracking</h8>
+        {% elif post.category == "two pointers" %}
+        <h8>two <br>pointers</h8>
+        {% elif post.category == "sliding window" %}
+        <h8>sliding <br>window</h8>
+        {% elif post.category == "topological sort" %}
+        <h8>topological <br>sort</h8>
         {% endif %}
         <!-- Otherwise output post category -->
-        {% if post.category != "linked lists" and post.category != "binary search" and post.category != "backtracking"%}
+
+        {% if post.category != "linked lists" and post.category != "binary search" and post.category != "backtracking" and post.category != "two pointers" and post.category != "topological sort" and post.category != "sliding window"%}
         <h8>{{post.category}}</h8>
         {% endif %}
         <br>
@@ -87,7 +94,7 @@
         {% elif post.category == "graphs" %}
         <i class="my-1 fas fa-share-alt"></i>
         {% elif post.category == "stacks" %}
-        <i class="fas fa-angle-double-up"></i>
+        <i class="fas fa-angle-double-right"></i>
         {% elif post.category == "queues" %}
         <i class="fas fa-angle-double-left"></i>
         {% elif post.category == "recursion" %}
@@ -105,7 +112,7 @@
         {% elif post.category == "topological sort" %}
         <i class="fas fa-leaf"></i>
         {% elif post.category == "two pointers" %}
-        <i class="far fa-hand-point-down"></i>
+        <i class="fas fa-hand-pointer"></i><i class="fas fa-hand-pointer"></i>
         {% elif post.category == "prefix sum" %}
         <i class="my-1 fas fa-bowling-ball"></i>
         {% elif post.category == "sliding window" %}
@@ -127,11 +134,17 @@
           <h8>linked <br>lists</h8>
           {% elif post.alt_category == "binary search" %}
           <h8>binary <br>search</h8>
+          {% elif post.alt_category == "topological sort" %}
+          <h8>topological <br>sort</h8>
+          {% elif post.alt_category == "two pointers" %}
+          <h8>two <br>pointers</h8>
+          {% elif post.alt_category == "sliding window" %}
+          <h8>sliding <br>window</h8>
           {% elif post.alt_category == "backtracking" %}
           <h8 class="text-align:left"><span>back<br>tracking</span>
           {% endif %}
           <!-- Otherwise output post alternate category -->
-          {% if post.alt_category and post.alt_category != "linked lists" and post.alt_category != "binary search" and post.alt_category != "backtracking"%}
+          {% if post.alt_category and post.alt_category != "linked lists" and post.alt_category != "binary search" and post.alt_category != "backtracking" and post.alt_category != "two pointers" and post.alt_category != "topological sort" and post.alt_category != "sliding window"%}
           <h8>{{post.alt_category}}</h8>
           {% endif %}
           <br>
@@ -154,7 +167,7 @@
         {% elif post.alt_category == "graphs" %}
         <i class="my-1 fas fa-share-alt"></i>
         {% elif post.alt_category == "stacks" %}
-        <i class="fas fa-angle-double-up"></i>
+        <i class="fas fa-angle-double-right"></i>
         {% elif post.alt_category == "queues" %}
         <i class="fas fa-angle-double-left"></i>
         {% elif post.alt_category == "strings" %}
@@ -180,7 +193,7 @@
         {% elif post.alt_category == "topological sort" %}
         <i class="fas fa-leaf"></i>
         {% elif post.alt_category == "two pointers" %}
-        <i class="far fa-hand-point-down"></i>
+        <i class="fas fa-hand-pointer"></i><i class="fas fa-hand-pointer"></i>
         {% elif post.alt_category == "prefix sum" %}
         <i class="fas fa-bowling-ball"></i>
         {% elif post.alt_category == "sliding window" %}

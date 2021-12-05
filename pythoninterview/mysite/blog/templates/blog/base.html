@@ -4,6 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <head>
+
   <meta charset="utf-8">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -20,6 +21,16 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Orbitron:wght@800;900&family=Rock+Salt&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Special+Elite&display=swap" rel="stylesheet">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PR81GCBKH0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PR81GCBKH0');
+</script>
 </head>
 
 <!-- Navbar -->
@@ -57,17 +68,20 @@
           <li><a class = "text-white" href="{% url 'category_post_list' category='graphs' %}">Graphs</a></li>
           <li><a class = "text-white" href="{% url 'category_post_list' category='tries' %}">Tries</a></li>
           <li><a class = "text-white" href="{% url 'category_post_list' category='heaps' %}">Heaps</a></li>
-          <li><a class = "text-white" href="{% url 'category_post_list' category='heaps' %}">Trees</a></li>
+          <li><a class = "text-white" href="{% url 'category_post_list' category='trees' %}">Trees</a></li>
           <li><a class = "text-white" href="{% url 'category_post_list' category='stacks' %}">Stacks</a></li>
+          <li><a class = "text-white" href="{% url 'category_post_list' category='queues' %}">Queues</a></li>
           <li><a class = "text-white" href="{% url 'category_post_list' category='DP' %}">DP</a></li>
-          <li><a class = "text-white" href="{% url 'category_post_list' category='recursion' %}">Recursion</a></li>
           <li><a class = "text-white" href="{% url 'category_post_list' category='backtracking' %}">Backtracking</a></li>
           <li><a class = "text-white" href="{% url 'category_post_list' category='math' %}">Math</a></li>
           <li><a class = "text-white" href="{% url 'category_post_list' category='binary' %}">Binary</a></li>
           <li><a class = "text-white" href="{% url 'category_post_list' category='binary search' %}">Binary Search</a></li>
           <li><a class = "text-white" href="{% url 'category_post_list' category='DFS' %}">DFS</a></li>
           <li><a class = "text-white" href="{% url 'category_post_list' category='BFS' %}">BFS</a></li>
-          <li><a class = "text-white" href="{% url 'category_post_list' category='greedy' %}">Greedy</a></li>
+          <li><a class = "text-white" href="{% url 'category_post_list' category='two pointers' %}">Two Pointers</a></li>
+          <li><a class = "text-white" href="{% url 'category_post_list' category='sliding window' %}">Sliding Window</a></li>
+          <li><a class = "text-white" href="{% url 'category_post_list' category='prefix sum' %}">Prefix Sum</a></li>
+          <li><a class = "text-white" href="{% url 'category_post_list' category='topological sort' %}">Topological Sort</a></li>
         </ul>
       </li>
             <li>
@@ -86,8 +100,6 @@
     </form>
   </div>
 </nav>
-
-
 
 
 <!-- content block -->
@@ -111,7 +123,7 @@
       <div class="row">
         <!-- Grid column -->
         <div class="col-md-12 py-3 text-light">
-          <h5>Share us on social media!</h5>
+          <h5>Share AlgoNinjutsu on social media</h5>
           <div class="fa-2x social_links" align="center">
             <a class="text-light" href="https://www.facebook.com/sharer/sharer.php?u={{request.build_absolute_uri}}">
               <i class="fab fa-facebook-square"></i>
@@ -124,9 +136,9 @@
             <a class="text-light" href="http://www.reddit.com/submit?url={{request.build_absolute_uri}}&title=Check%20out%20this%20website%20AlgoNinjutsu">
               <i class="fab fa-reddit-square"></i>
             </a>
-            <a class="text-light" href="http://www.reddit.com/submit?url={{request.build_absolute_uri}}&title=Check%20out%20this%20website%20AlgoNinjutsu">
+            <a class="text-light" href="https://twitter.com/share?url={{request.build_absolute_uri}}&title=Check%20out%20this%20website%20AlgoNinjutsu">
               <i class="fab fa-twitter-square"></i>
-            </a>
+
            </div>
         </div>
         <!-- Grid column -->
@@ -135,7 +147,13 @@
     </div>
     <!-- Footer Elements -->
     <!-- Copyright -->
-    <div class="footer-copyright text-center py-3" style="background-color:rgb(77,91,109);">A problem a day keeps your village safe.
+    <div class="text-center" style="background-color:rgb(77,91,109);">Connect with me<br>
+      <a class="text-light" href="https://www.linkedin.com/in/patrick-leaton-a366551a6/">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a class="text-light contact mx-2" href="mailto: Patrick@AlgoNinjutsu.com">
+  <i class="far fa-envelope"></i>
+  </a>
     </div>
     <!-- Copyright -->
   </footer>

@@ -15,7 +15,17 @@ body {
 img {
     max-width:100%;
 }
+.page-link{
+  color:black !important;
+  border-radius: 5px;
+  font-size:15px;
+  margin-left: 2px;
+}
 
+.templates{
+  font-size: 3vmin !important;
+
+}
 .postdifficulty{
     font-size: 1.9vmin !important;
 }
@@ -115,7 +125,6 @@ a.check:visited {
   position: relative;
   flex-direction: column;
   width:22% !important;
-  height: 10rem;
   padding: 2rem;
   border-radius: 16px;
   box-shadow: -1rem 0 3rem black;
@@ -153,11 +162,17 @@ a.check:visited {
     border-color: rgb(55, 78, 109);
     width:100%;
 }
+.dropdown-links{
+  font-size: 5px;
+}
 .navbar-toggler{
   background-color: rgb(55, 78, 109);
   border-color: rgb(55, 78, 109);
   width:45px;
   float:left;
+}
+li{
+  font-size: 14px;
 }
 .footer{
   margin-top: 400px;

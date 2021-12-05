@@ -49,10 +49,7 @@ class Post(models.Model):
     explanation = RichTextField()
     additional_notes = RichTextField(blank=True, null = True)
     published_date = models.DateTimeField(blank=True, null=True)
-
-
     def get_absolute_url(self):
         return reverse("post_detail",kwargs={'pk':self.pk})
-
     def __str__(self):
         return str(self.title.strip("<p>").strip("</p>"))

@@ -116,7 +116,16 @@ width="450" height="450">
     <header class = "home-card-header">
       <a class = "text-white" href="{% url 'category_post_list' category='stacks' %}">
       <p>Stacks</p>
-      <i class="fas fa-angle-double-up"></i>
+      <i class="fas fa-angle-double-right"></i>
+      </a>
+    </header>
+  </article>
+
+  <article class="home-card" style="background-color:	rgb(112,128,144);">
+    <header class = "home-card-header">
+      <a class = "text-white" href="{% url 'category_post_list' category='queues' %}">
+      <p>Queues</p>
+      <i class="fas fa-angle-double-left"></i>
       </a>
     </header>
   </article>
@@ -130,14 +139,6 @@ width="450" height="450">
     </header>
   </article>
 
-  <article class="home-card" style="background-color:	rgb(112,128,144);">
-    <header class = "home-card-header">
-      <a class = "text-white" href="{% url 'category_post_list' category='recursion' %}">
-      <p>Recursion</p>
-      <i class="fas fa-infinity"></i>
-      </a>
-    </header>
-  </article>
 
   <article class="home-card" style="background-color:	rgb(112,128,144);">
     <header class = "home-card-header">
@@ -206,6 +207,50 @@ width="450" height="450">
   </article>
 </section>
 <br>
+<section class = "home-card-list last-row" style="padding-left:10px;">
+<br>
+  <article class="home-card" style="background-color:	rgb(112,128,144);">
+    <header class = "home-card-header">
+      <a class = "text-white" href="{% url 'category_post_list' category='two pointers' %}">
+      <p>Two Pointers</p>
+      <i class="fas fa-hand-pointer"></i><i class="fas fa-hand-pointer"></i>
+      </a>
+    </header>
+  </article>
+
+  <article class="home-card" style="background-color:	rgb(112,128,144);">
+    <header class = "home-card-header">
+      <a class = "text-white" href="{% url 'category_post_list' category='sliding window' %}">
+      <p>Sliding Window</p>
+      <i class="far fa-square"></i>
+      </a>
+    </header>
+  </article>
+
+  <article class="home-card" style="background-color:	rgb(112,128,144);">
+    <header class = "home-card-header">
+      <a class = "text-white" href="{% url 'category_post_list' category='prefix sum' %}">
+      <p>Prefix Sum</p>
+      <i class="fas fa-bowling-ball"></i>
+      </a>
+    </header>
+  </article>
+
+  <article class="home-card" style="background-color:	rgb(112,128,144);">
+    <header class = "home-card-header">
+      <a class = "text-white" href="{% url 'category_post_list' category='topological sort' %}">
+      <p>Topological Sort</p>
+      <i class="fas fa-leaf"></i>
+      </a>
+    </header>
+  </article>
+
+  <article class="home-card" style=" opacity: 0;">
+    <header class = "home-card-header">
+    </header>
+  </article>
+</section>
+<br>
 <br>
 <br>
 <h1 class = "intro">Templates (Coming Soon!)</h1>
@@ -249,8 +294,10 @@ width="450" height="450">
     </header>
   </article>
 </section>
-<br>
-<br>
+
+
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 </div>

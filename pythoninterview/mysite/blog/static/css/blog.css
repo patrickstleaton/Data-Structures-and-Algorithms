@@ -1,5 +1,5 @@
 body {
-  font-family: 'Special Elite', cursive;
+  font-family: 'Georgia', sans-serif;
   background: #ECE9E6;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to bottom, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
   overflow-x: hidden;
@@ -149,6 +149,7 @@ a.check:visited {
 .med-viewport{
   font-size: 1.5vmin !important;
 }
+
 .intro{
   font-family: 'Rock Salt', cursive;
 }

@@ -29,16 +29,12 @@ img {
 .postdifficulty{
     font-size: 1.9vmin !important;
 }
-.dropdown-links{
-  font-family: 'Special Elite', cursive !important
-}
+
 .counter{
   font-family: 'Rock Salt', cursive;
   font-size: 35px;
 }
-.dropdown-menu{
-  font-size:12px;
-}
+
 .postdate{
   text-align: center;
 }
@@ -157,6 +153,7 @@ a.check:visited {
   background-color: rgb(55, 78, 109);
   border-color: rgb(55, 78, 109);
   width:100%;
+  font-size:12px;
 }
 .nav-link{
     background-color: rgb(55, 78, 109);
@@ -164,6 +161,7 @@ a.check:visited {
     width:100%;
 }
 .dropdown-links{
+  font-family: 'Georgia', sans-serif;
   font-size: 5px;
 }
 .navbar-toggler{

@@ -2,7 +2,6 @@ from django.db import models
 from django.utils import timezone
 from django.urls import reverse
 from ckeditor.fields import RichTextField
-import random
 # Create your models here.
 
 DIFFICULTY_CHOICES = (
@@ -50,6 +49,6 @@ class Post(models.Model):
     additional_notes = RichTextField(blank=True, null = True)
     published_date = models.DateTimeField(blank=True, null=True)
     def get_absolute_url(self):
-        return reverse("post_detail",kwargs={'pk':self.pk})
+        return reverse("post_detail", kwargs={'pk':self.pk})
     def __str__(self):
         return str(self.title.strip("<p>").strip("</p>"))

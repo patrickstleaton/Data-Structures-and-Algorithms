@@ -15,6 +15,7 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATE_DIR = os.path.join(BASE_DIR, 'blog/templates/blog')
+
 DEBUG = True
 
 ALLOWED_HOSTS = ['67.205.165.239', 'www.algoninjutsu.com', 'algoninjutsu.com', '127.0.0.1']

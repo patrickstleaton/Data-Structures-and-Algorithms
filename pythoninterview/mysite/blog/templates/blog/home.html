@@ -2,303 +2,267 @@
 {% block content %}
 {% load static %}
 <div class="home col-md-12 container" align="center">
-<h1 class = "intro">AlgoNinjutsu</h1>
-<br>
-<h2 class = "">Become an algorithms ninja.</h2>
-<img align src="{% static 'images/thumbnail_image1.png' %}" class="img-fluid rotate" alt="Responsive image"
-width="450" height="450">
-<br>
-<h1 class = "intro">Questions</h1>
-<br><br>
-<h4>Over 300 questions with detailed solutions that provide line by line explanations spanning the following categories:</h4>
-<br>
-<br>
+  <h1 class="intro">AlgoNinjutsu</h1>
+  <br>
+  <h2 class="">Become an algorithms ninja.</h2>
+  <img align src="{% static 'images/thumbnail_image1.png' %}" class="img-fluid rotate" alt="Responsive image" width="450" height="450">
+  <br>
+  <h1 class="intro">Questions</h1>
+  <br><br>
+  <h4>Over 300 questions with detailed solutions that provide line by line explanations spanning the following categories:</h4>
+  <br>
+  <br>
 
-<section class = "home-card-list">
-  <article class="home-card" style="background-color:	rgb(112,128,144);">
-    <header class = "home-card-header">
-      <a class = "text-white" href="{% url 'category_post_list' category='arrays' %}">
-      <p>Arrays</p>
-      <img class="img-fluid" src="{% static 'images/thumbnail_image7.png' %}" width="35" height="13">
-      </a>
-    </header>
-  </article>
+  <section class="home-card-list">
+    <article class="home-card" style="background-color:	rgb(112,128,144);">
+      <header class="home-card-header">
+        <a class="text-white" href="{% url 'category_post_list' category='arrays' %}">
+          <p>Arrays</p>
+          <img class="img-fluid" src="{% static 'images/thumbnail_image7.png' %}" width="35" height="13">
+        </a>
+      </header>
+    </article>
 
-  <article class="home-card" style="background-color:	rgb(112,128,144);">
-    <header class = "home-card-header">
-      <a class = "text-white" href="{% url 'category_post_list' category='linked lists' %}">
-      <p>Linked Lists</p>
-      <img class="img-fluid" src="{% static 'images/thumbnail_image8.png' %}" width="45" height="12">
-      </a>
-    </header>
-  </article>
+    <article class="home-card" style="background-color:	rgb(112,128,144);">
+      <header class="home-card-header">
+        <a class="text-white" href="{% url 'category_post_list' category='linked lists' %}">
+          <p>Linked Lists</p>
+          <img class="img-fluid" src="{% static 'images/thumbnail_image8.png' %}" width="45" height="12">
+        </a>
+      </header>
+    </article>
 
-  <article class="home-card" style="background-color:	rgb(112,128,144);">
-    <header class = "home-card-header">
-      <a class = "text-white" href="{% url 'category_post_list' category='strings' %}">
-      <p>Strings</p>
-      <p class= "my-1" style = "font-size: 10px; font: verdana;"><b>aabb123</b></p>
-      </a>
-    </header>
-  </article>
+    <article class="home-card" style="background-color:	rgb(112,128,144);">
+      <header class="home-card-header">
+        <a class="text-white" href="{% url 'category_post_list' category='strings' %}">
+          <p>Strings</p>
+          <p class="my-1" style="font-size: 10px; font: verdana;"><b>aabb123</b></p>
+        </a>
+      </header>
+    </article>
 
-  <article class="home-card" style="background-color:	rgb(112,128,144);">
-    <header class = "home-card-header">
-      <a class = "text-white" href="{% url 'category_post_list' category='trees' %}">
-      <p>Binary Search Trees</p>
-      <img class="img-fluid" src="{% static 'images/thumbnail_image5.png' %}" width="16.5" height="16.5">
-      </a>
-    </header>
-  </article>
+    <article class="home-card" style="background-color:	rgb(112,128,144);">
+      <header class="home-card-header">
+        <a class="text-white" href="{% url 'category_post_list' category='trees' %}">
+          <p>Binary Search Trees</p>
+          <img class="img-fluid" src="{% static 'images/thumbnail_image5.png' %}" width="16.5" height="16.5">
+        </a>
+      </header>
+    </article>
 
-  <article class="home-card" style="background-color:	rgb(112,128,144);">
-    <header class = "home-card-header">
-      <a class = "text-white" href="{% url 'category_post_list' category='hashmaps' %}">
-      <p>HashMaps</p>
-      <i class="fas fa-columns"></i>
-      </a>
-    </header>
-  </article>
+    <article class="home-card" style="background-color:	rgb(112,128,144);">
+      <header class="home-card-header">
+        <a class="text-white" href="{% url 'category_post_list' category='hashmaps' %}">
+          <p>HashMaps</p>
+          <i class="fas fa-columns"></i>
+        </a>
+      </header>
+    </article>
   </section>
   <br>
-<section class = "home-card-list" style="padding-left:10px;">
-<br>
+  <section class="home-card-list" style="padding-left:10px;">
+    <br>
 
-  <article class="home-card" style="background-color:	rgb(112,128,144);">
-    <header class = "home-card-header">
-      <a class = "text-white" href="{% url 'category_post_list' category='hashsets' %}">
-      <p>HashSets</p>
-      <i class="fas fa-table"></i>
-      </a>
-    </header>
-  </article>
+    <article class="home-card" style="background-color:	rgb(112,128,144);">
+      <header class="home-card-header">
+        <a class="text-white" href="{% url 'category_post_list' category='hashsets' %}">
+          <p>HashSets</p>
+          <i class="fas fa-table"></i>
+        </a>
+      </header>
+    </article>
 
-  <article class="home-card" style="background-color:	rgb(112,128,144);">
-    <header class = "home-card-header">
-      <a class = "text-white" href="{% url 'category_post_list' category='graphs' %}">
-      <p>Graphs</p>
-      <i class="fas fa-share-alt"></i>
-      </a>
-    </header>
-  </article>
+    <article class="home-card" style="background-color:	rgb(112,128,144);">
+      <header class="home-card-header">
+        <a class="text-white" href="{% url 'category_post_list' category='graphs' %}">
+          <p>Graphs</p>
+          <i class="fas fa-share-alt"></i>
+        </a>
+      </header>
+    </article>
 
-  <article class="home-card" style="background-color:	rgb(112,128,144);">
-    <header class = "home-card-header">
-      <a class = "text-white" href="{% url 'category_post_list' category='tries' %}">
-      <p>Tries</p>
-      <img class="img-fluid" src="{% static 'images/thumbnail_image6.png' %}" width="20" height="17">
-      </a>
-    </header>
-  </article>
+    <article class="home-card" style="background-color:	rgb(112,128,144);">
+      <header class="home-card-header">
+        <a class="text-white" href="{% url 'category_post_list' category='tries' %}">
+          <p>Tries</p>
+          <img class="img-fluid" src="{% static 'images/thumbnail_image6.png' %}" width="20" height="17">
+        </a>
+      </header>
+    </article>
 
-  <article class="home-card" style="background-color:	rgb(112,128,144);">
-    <header class = "home-card-header">
-      <a class = "text-white" href="{% url 'category_post_list' category='heaps' %}">
-      <p>Heaps</p>
-      <img class="img-fluid" src="{% static 'images/thumbnail_image5.png' %}" width="16.5" height="16.5">
-      </a>
-    </header>
-  </article>
+    <article class="home-card" style="background-color:	rgb(112,128,144);">
+      <header class="home-card-header">
+        <a class="text-white" href="{% url 'category_post_list' category='heaps' %}">
+          <p>Heaps</p>
+          <img class="img-fluid" src="{% static 'images/thumbnail_image5.png' %}" width="16.5" height="16.5">
+        </a>
+      </header>
+    </article>
 
-  <article class="home-card" style="background-color:	rgb(112,128,144);">
-    <header class = "home-card-header">
-      <a class = "text-white" href="{% url 'category_post_list' category='trees' %}">
-      <p>Trees</p>
-      <img class="img-fluid" src="{% static 'images/thumbnail_image5.png' %}" width="16.5" height="16.5">
-      </a>
-    </header>
-  </article>
-</section>
-<br>
-<section class = "home-card-list" style="padding-left:10px;">
-<br>
-  <article class="home-card" style="background-color:	rgb(112,128,144);">
-    <header class = "home-card-header">
-      <a class = "text-white" href="{% url 'category_post_list' category='stacks' %}">
-      <p>Stacks</p>
-      <i class="fas fa-angle-double-right"></i>
-      </a>
-    </header>
-  </article>
+    <article class="home-card" style="background-color:	rgb(112,128,144);">
+      <header class="home-card-header">
+        <a class="text-white" href="{% url 'category_post_list' category='trees' %}">
+          <p>Trees</p>
+          <img class="img-fluid" src="{% static 'images/thumbnail_image5.png' %}" width="16.5" height="16.5">
+        </a>
+      </header>
+    </article>
+  </section>
+  <br>
+  <section class="home-card-list" style="padding-left:10px;">
+    <br>
+    <article class="home-card" style="background-color:	rgb(112,128,144);">
+      <header class="home-card-header">
+        <a class="text-white" href="{% url 'category_post_list' category='stacks' %}">
+          <p>Stacks</p>
+          <i class="fas fa-angle-double-right"></i>
+        </a>
+      </header>
+    </article>
 
-  <article class="home-card" style="background-color:	rgb(112,128,144);">
-    <header class = "home-card-header">
-      <a class = "text-white" href="{% url 'category_post_list' category='queues' %}">
-      <p>Queues</p>
-      <i class="fas fa-angle-double-left"></i>
-      </a>
-    </header>
-  </article>
+    <article class="home-card" style="background-color:	rgb(112,128,144);">
+      <header class="home-card-header">
+        <a class="text-white" href="{% url 'category_post_list' category='queues' %}">
+          <p>Queues</p>
+          <i class="fas fa-angle-double-left"></i>
+        </a>
+      </header>
+    </article>
 
-  <article class="home-card" style="background-color:	rgb(112,128,144);">
-    <header class = "home-card-header">
-      <a class = "text-white" href="{% url 'category_post_list' category='DP' %}">
-      <p>Dynamic Programming</p>
-      <i class="my-1 fas fa-sort-amount-up"></i>
-      </a>
-    </header>
-  </article>
-
-
-  <article class="home-card" style="background-color:	rgb(112,128,144);">
-    <header class = "home-card-header">
-      <a class = "text-white" href="{% url 'category_post_list' category='backtracking' %}">
-      <p>Backtracking</p>
-      <i class="fas fa-trash-restore"></i>
-      </a>
-    </header>
-  </article>
-
-  <article class="home-card" style="background-color:	rgb(112,128,144);">
-    <header class = "home-card-header">
-      <a class = "text-white" href="{% url 'category_post_list' category='math' %}">
-      <p>Math</p>
-      <i class="fas fa-calculator"></i>
-      </a>
-    </header>
-  </article>
-</section>
-<br>
-<section class = "home-card-list" style="padding-left:10px;">
-<br>
-  <article class="home-card" style="background-color:	rgb(112,128,144);">
-    <header class = "home-card-header">
-      <a class = "text-white" href="{% url 'category_post_list' category='binary' %}">
-      <p>Binary</p>
-      <p class= "my-1" style = "font-size: 10px; font: verdana;"><b>01101001</b></p>
-      </a>
-    </header>
-  </article>
-
-  <article class="home-card" style="background-color:	rgb(112,128,144);">
-    <header class = "home-card-header">
-      <a class = "text-white" href="{% url 'category_post_list' category='binary search' %}">
-      <p>Binary Search</p>
-      <i class="fas fa-low-vision"></i>
-      </a>
-    </header>
-  </article>
-
-  <article class="home-card" style="background-color:	rgb(112,128,144);">
-    <header class = "home-card-header">
-      <a class = "text-white" href="{% url 'category_post_list' category='DFS' %}">
-      <p>Depth-First Search</p>
-      <i class="fas fa-arrows-alt-v"></i>
-      </a>
-    </header>
-  </article>
-
-  <article class="home-card" style="background-color:	rgb(112,128,144);">
-    <header class = "home-card-header">
-      <a class = "text-white" href="{% url 'category_post_list' category='BFS' %}">
-      <p>Breadth-First Search</p>
-      <i class="fas fa-arrows-alt-h"></i>
-      </a>
-    </header>
-  </article>
-
-  <article class="home-card" style="background-color:	rgb(112,128,144);">
-    <header class = "home-card-header">
-      <a class = "text-white" href="{% url 'category_post_list' category='greedy' %}">
-      <p>Greedy</p>
-      <i class="fas fa-chess-board"></i>
-      </a>
-    </header>
-  </article>
-</section>
-<br>
-<section class = "home-card-list last-row" style="padding-left:10px;">
-<br>
-  <article class="home-card" style="background-color:	rgb(112,128,144);">
-    <header class = "home-card-header">
-      <a class = "text-white" href="{% url 'category_post_list' category='two pointers' %}">
-      <p>Two Pointers</p>
-      <i class="fas fa-hand-pointer"></i><i class="fas fa-hand-pointer"></i>
-      </a>
-    </header>
-  </article>
-
-  <article class="home-card" style="background-color:	rgb(112,128,144);">
-    <header class = "home-card-header">
-      <a class = "text-white" href="{% url 'category_post_list' category='sliding window' %}">
-      <p>Sliding Window</p>
-      <i class="far fa-square"></i>
-      </a>
-    </header>
-  </article>
-
-  <article class="home-card" style="background-color:	rgb(112,128,144);">
-    <header class = "home-card-header">
-      <a class = "text-white" href="{% url 'category_post_list' category='topological sort' %}">
-      <p>Topological Sort</p>
-      <i class="fas fa-leaf"></i>
-      </a>
-    </header>
-  </article>
-
-  <article class="home-card" style="background-color:	rgb(112,128,144);">
-    <header class = "home-card-header">
-      <a class = "text-white" href="{% url 'category_post_list' category='prefix sum' %}">
-      <p>Prefix Sum</p>
-      <i class="fas fa-bowling-ball"></i>
-      </a>
-    </header>
-  </article>
+    <article class="home-card" style="background-color:	rgb(112,128,144);">
+      <header class="home-card-header">
+        <a class="text-white" href="{% url 'category_post_list' category='DP' %}">
+          <p>Dynamic Programming</p>
+          <i class="my-1 fas fa-sort-amount-up"></i>
+        </a>
+      </header>
+    </article>
 
 
-  <article class="home-card" style=" opacity: 0;">
-    <header class = "home-card-header">
-    </header>
-  </article>
-</section>
-<br>
-<br>
-<br>
-<h1 class = "intro">Templates (Coming Soon!)</h1>
-<br>
-<h4>Code templates that outline how to get started with designing the specific algorithm:</h4>
-<br>
-<br>
-<section class = "home-card-list">
-  <article class="home-card"  style="background-color:	rgb(110,127,128);">
-    <header class = "home-card-header">
-    <p>Dynamic Programming</p>
-    <i class="my-1 fas fa-sort-amount-up"></i>
-    </header>
-  </article>
+    <article class="home-card" style="background-color:	rgb(112,128,144);">
+      <header class="home-card-header">
+        <a class="text-white" href="{% url 'category_post_list' category='backtracking' %}">
+          <p>Backtracking</p>
+          <i class="fas fa-trash-restore"></i>
+        </a>
+      </header>
+    </article>
 
-  <article class="home-card" style="background-color:	rgb(110,127,128);">
-    <header class = "home-card-header" >
-      <p>Backtracking</p>
-      <i class="fas fa-trash-restore"></i>
-    </header>
-  </article>
+    <article class="home-card" style="background-color:	rgb(112,128,144);">
+      <header class="home-card-header">
+        <a class="text-white" href="{% url 'category_post_list' category='math' %}">
+          <p>Math</p>
+          <i class="fas fa-calculator"></i>
+        </a>
+      </header>
+    </article>
+  </section>
+  <br>
+  <section class="home-card-list" style="padding-left:10px;">
+    <br>
+    <article class="home-card" style="background-color:	rgb(112,128,144);">
+      <header class="home-card-header">
+        <a class="text-white" href="{% url 'category_post_list' category='binary' %}">
+          <p>Binary</p>
+          <p class="my-1" style="font-size: 10px; font: verdana;"><b>01101001</b></p>
+        </a>
+      </header>
+    </article>
 
-  <article class="home-card" style="background-color:	rgb(110,127,128);">
-    <header class = "home-card-header">
-      <p>Depth First Search</p>
-      <i class="fas fa-arrows-alt-v"></i>
-    </header>
-  </article>
+    <article class="home-card" style="background-color:	rgb(112,128,144);">
+      <header class="home-card-header">
+        <a class="text-white" href="{% url 'category_post_list' category='binary search' %}">
+          <p>Binary Search</p>
+          <i class="fas fa-low-vision"></i>
+        </a>
+      </header>
+    </article>
 
-  <article class="home-card" style="background-color:	rgb(110,127,128);">
-    <header class = "home-card-header">
-      <p>Breadth-First Search</p>
-      <i class="fas fa-arrows-alt-h"></i>
-    </header>
-  </article>
+    <article class="home-card" style="background-color:	rgb(112,128,144);">
+      <header class="home-card-header">
+        <a class="text-white" href="{% url 'category_post_list' category='DFS' %}">
+          <p>Depth-First Search</p>
+          <i class="fas fa-arrows-alt-v"></i>
+        </a>
+      </header>
+    </article>
 
-  <article class="home-card" style="background-color:	rgb(110,127,128);">
-    <header class = "home-card-header">
-      <p>Binary Search</p>
-      <i class="fas fa-low-vision"></i>
-    </header>
-  </article>
-</section>
+    <article class="home-card" style="background-color:	rgb(112,128,144);">
+      <header class="home-card-header">
+        <a class="text-white" href="{% url 'category_post_list' category='BFS' %}">
+          <p>Breadth-First Search</p>
+          <i class="fas fa-arrows-alt-h"></i>
+        </a>
+      </header>
+    </article>
+
+    <article class="home-card" style="background-color:	rgb(112,128,144);">
+      <header class="home-card-header">
+        <a class="text-white" href="{% url 'category_post_list' category='greedy' %}">
+          <p>Greedy</p>
+          <i class="fas fa-chess-board"></i>
+        </a>
+      </header>
+    </article>
+  </section>
+  <br>
+  <section class="home-card-list last-row" style="padding-left:10px;">
+    <br>
+    <article class="home-card" style="background-color:	rgb(112,128,144);">
+      <header class="home-card-header">
+        <a class="text-white" href="{% url 'category_post_list' category='two pointers' %}">
+          <p>Two Pointers</p>
+          <i class="fas fa-hand-pointer"></i><i class="fas fa-hand-pointer"></i>
+        </a>
+      </header>
+    </article>
+
+    <article class="home-card" style="background-color:	rgb(112,128,144);">
+      <header class="home-card-header">
+        <a class="text-white" href="{% url 'category_post_list' category='sliding window' %}">
+          <p>Sliding Window</p>
+          <i class="far fa-square"></i>
+        </a>
+      </header>
+    </article>
+
+    <article class="home-card" style="background-color:	rgb(112,128,144);">
+      <header class="home-card-header">
+        <a class="text-white" href="{% url 'category_post_list' category='topological sort' %}">
+          <p>Topological Sort</p>
+          <i class="fas fa-leaf"></i>
+        </a>
+      </header>
+    </article>
+
+    <article class="home-card" style="background-color:	rgb(112,128,144);">
+      <header class="home-card-header">
+        <a class="text-white" href="{% url 'category_post_list' category='prefix sum' %}">
+          <p>Prefix Sum</p>
+          <i class="fas fa-bowling-ball"></i>
+        </a>
+      </header>
+    </article>
 
 
-<!-- Add icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <article class="home-card" style="background-color:	rgb(112,128,144);">
+      <header class="home-card-header">
+        <a class="text-white" href="{% url 'random' %}">
+          <p>Random</p>
+          <p class="my-1" style="font-size: 10px; font: verdana;"><b>???</b></p>
+        </a>
+      </header>
+    </article>
+  </section>
+  <br>
+  <br>
+  <br>
+
+
+
+
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 </div>

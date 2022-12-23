@@ -9,7 +9,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <title>AlgoNinjutsu | Become an Algorithms Ninja</title>
-  <link class="title" rel="shortcut icon" type="image/png"  href="{% static 'images/title_image.png' %}"/>
+  <link class="title" rel="shortcut icon" type="image/png" href="{% static 'images/title_image.png' %}" />
   <!-- Optional JavaScript -->
 
   <!-- fontawesome -->
@@ -22,16 +22,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Orbitron:wght@800;900&family=Rock+Salt&display=swap" rel="stylesheet">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PR81GCBKH0"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PR81GCBKH0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-PR81GCBKH0');
-</script>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8274472936024331"
-     crossorigin="anonymous"></script>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-PR81GCBKH0');
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8274472936024331" crossorigin="anonymous"></script>
 </head>
 
 <!-- Navbar -->
@@ -40,66 +42,69 @@
   <a class="nav-item">
     <a class='navbar-brand text-light' href="{% url 'home'%}">
       <img src="{% static 'images/thumbnail_image3.png' %}" width="55" height="55"><b> AlgoNinjutsu</b></a>
-      <button align="left" type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar" name="button"
-       width="10" height="10">
-        <i class="fas fa-hamburger text-light"></i>
-      </button>
-  <div class="navbar_links collapse navbar-collapse justify-content-between" id="navbar">
-    <ul class=" navbar-nav font-weight-bold px-2 fa-1x">
-      <li class="nav-item dropdown">
-        <span class="nav-link dropdown-toggle" data-toggle = "dropdown">
-          <a class = "text-light" href=""><b>Difficulty</b></a></span>
-        <span style="color:blue;" class="caret"></span>
-        <ul class="dropdown-menu dropdown-links "style="font-size:15px;">
-          <li><a class = "text-white" href="{% url 'difficulty_post_list' difficulty='easy' %}">Easy</a></li>
-          <li><a class = "text-white" href="{% url 'difficulty_post_list' difficulty='medium' %}">Medium</a></li>
-          <li><a class = "text-white" href="{% url 'difficulty_post_list' difficulty='hard' %}">Hard</a></li>
-        </ul>
-      </li>
-      <li class="nav-item dropdown">
-        <span class="nav-link dropdown-toggle" data-toggle = "dropdown">
-          <a class = "text-light" href=""><b>Categories</b></a></span>
-        <span class="caret"></span>
-        <ul class="dropdown-menu dropdown-links" style="font-size:15px;">
-          <li><a class = "text-white" href="{% url 'category_post_list' category='arrays' %}">Arrays</a></li>
-          <li><a class = "text-white" href="{% url 'category_post_list' category='strings' %}">Strings</a></li>
-          <li><a class = "text-white" href="{% url 'category_post_list' category='linked lists' %}">Linked Lists</a></li>
-          <li><a class = "text-white" href="{% url 'category_post_list' category='hashmaps' %}">Hashmaps</a></li>
-          <li><a class = "text-white" href="{% url 'category_post_list' category='hashsets' %}">Hashsets</a></li>
-          <li><a class = "text-white" href="{% url 'category_post_list' category='graphs' %}">Graphs</a></li>
-          <li><a class = "text-white" href="{% url 'category_post_list' category='tries' %}">Tries</a></li>
-          <li><a class = "text-white" href="{% url 'category_post_list' category='heaps' %}">Heaps</a></li>
-          <li><a class = "text-white" href="{% url 'category_post_list' category='trees' %}">Trees</a></li>
-          <li><a class = "text-white" href="{% url 'category_post_list' category='stacks' %}">Stacks</a></li>
-          <li><a class = "text-white" href="{% url 'category_post_list' category='queues' %}">Queues</a></li>
-          <li><a class = "text-white" href="{% url 'category_post_list' category='DP' %}">DP</a></li>
-          <li><a class = "text-white" href="{% url 'category_post_list' category='backtracking' %}">Backtracking</a></li>
-          <li><a class = "text-white" href="{% url 'category_post_list' category='math' %}">Math</a></li>
-          <li><a class = "text-white" href="{% url 'category_post_list' category='binary' %}">Binary</a></li>
-          <li><a class = "text-white" href="{% url 'category_post_list' category='binary search' %}">Binary Search</a></li>
-          <li><a class = "text-white" href="{% url 'category_post_list' category='DFS' %}">DFS</a></li>
-          <li><a class = "text-white" href="{% url 'category_post_list' category='BFS' %}">BFS</a></li>
-          <li><a class = "text-white" href="{% url 'category_post_list' category='two pointers' %}">Two Pointers</a></li>
-          <li><a class = "text-white" href="{% url 'category_post_list' category='sliding window' %}">Sliding Window</a></li>
-          <li><a class = "text-white" href="{% url 'category_post_list' category='prefix sum' %}">Prefix Sum</a></li>
-          <li><a class = "text-white" href="{% url 'category_post_list' category='topological sort' %}">Topological Sort</a></li>
-        </ul>
-      </li>
-            <li>
-              <span class="nav-link">
-                <a class = "text-light" href="{% url 'post_list'%}"><b>Questions</b></a></span>
-            </li>
-    </ul>
-    <form class="form-inline ml-2 mx-2" action="{% url 'search' %}", method = "GET">
-      <div class="input-group">
-        <input type="text" class="form-control" name="search_questions" placeholder="search..">
-        <div class="input-group-append">
-          <button type="submit" name="search"><i style="color:rgb(55, 78, 109);" class="fas fa-bomb fa-2x"></i>
-          </button>
+    <button align="left" type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar" name="button" width="10" height="10">
+      <i class="fas fa-hamburger text-light"></i>
+    </button>
+    <div class="navbar_links collapse navbar-collapse justify-content-between" id="navbar">
+      <ul class=" navbar-nav font-weight-bold px-2 fa-1x">
+        <li class="nav-item dropdown">
+          <span class="nav-link dropdown-toggle" data-toggle="dropdown">
+            <a class="text-light" href=""><b>Difficulty</b></a></span>
+          <span style="color:blue;" class="caret"></span>
+          <ul class="dropdown-menu dropdown-links " style="font-size:15px;">
+            <li><a class="text-white" href="{% url 'difficulty_post_list' difficulty='easy' %}">Easy</a></li>
+            <li><a class="text-white" href="{% url 'difficulty_post_list' difficulty='medium' %}">Medium</a></li>
+            <li><a class="text-white" href="{% url 'difficulty_post_list' difficulty='hard' %}">Hard</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <span class="nav-link dropdown-toggle" data-toggle="dropdown">
+            <a class="text-light" href=""><b>Categories</b></a></span>
+          <span class="caret"></span>
+          <ul class="dropdown-menu dropdown-links" style="font-size:15px;">
+            <li><a class="text-white" href="{% url 'category_post_list' category='arrays' %}">Arrays</a></li>
+            <li><a class="text-white" href="{% url 'category_post_list' category='strings' %}">Strings</a></li>
+            <li><a class="text-white" href="{% url 'category_post_list' category='linked lists' %}">Linked Lists</a></li>
+            <li><a class="text-white" href="{% url 'category_post_list' category='hashmaps' %}">Hashmaps</a></li>
+            <li><a class="text-white" href="{% url 'category_post_list' category='hashsets' %}">Hashsets</a></li>
+            <li><a class="text-white" href="{% url 'category_post_list' category='graphs' %}">Graphs</a></li>
+            <li><a class="text-white" href="{% url 'category_post_list' category='tries' %}">Tries</a></li>
+            <li><a class="text-white" href="{% url 'category_post_list' category='heaps' %}">Heaps</a></li>
+            <li><a class="text-white" href="{% url 'category_post_list' category='trees' %}">Trees</a></li>
+            <li><a class="text-white" href="{% url 'category_post_list' category='stacks' %}">Stacks</a></li>
+            <li><a class="text-white" href="{% url 'category_post_list' category='queues' %}">Queues</a></li>
+            <li><a class="text-white" href="{% url 'category_post_list' category='DP' %}">DP</a></li>
+            <li><a class="text-white" href="{% url 'category_post_list' category='backtracking' %}">Backtracking</a></li>
+            <li><a class="text-white" href="{% url 'category_post_list' category='math' %}">Math</a></li>
+            <li><a class="text-white" href="{% url 'category_post_list' category='binary' %}">Binary</a></li>
+            <li><a class="text-white" href="{% url 'category_post_list' category='binary search' %}">Binary Search</a></li>
+            <li><a class="text-white" href="{% url 'category_post_list' category='DFS' %}">DFS</a></li>
+            <li><a class="text-white" href="{% url 'category_post_list' category='BFS' %}">BFS</a></li>
+            <li><a class="text-white" href="{% url 'category_post_list' category='two pointers' %}">Two Pointers</a></li>
+            <li><a class="text-white" href="{% url 'category_post_list' category='sliding window' %}">Sliding Window</a></li>
+            <li><a class="text-white" href="{% url 'category_post_list' category='prefix sum' %}">Prefix Sum</a></li>
+            <li><a class="text-white" href="{% url 'category_post_list' category='topological sort' %}">Topological Sort</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="nav-link">
+            <a class="text-light" href="{% url 'random'%}"><b>Random</b></a></span>
+        </li>
+        <li>
+          <span class="nav-link">
+            <a class="text-light" href="{% url 'post_list'%}"><b>All Questions</b></a></span>
+        </li>
+      </ul>
+      <form class="form-inline ml-2 mx-2" action="{% url 'search' %}" , method="GET">
+        <div class="input-group">
+          <input type="text" class="form-control" name="search_questions" placeholder="search..">
+          <div class="input-group-append">
+            <button type="submit" name="search"><i style="color:rgb(55, 78, 109);" class="fas fa-bomb fa-2x"></i>
+            </button>
+          </div>
         </div>
-      </div>
-    </form>
-  </div>
+      </form>
+    </div>
 </nav>
 
 
@@ -115,8 +120,8 @@
 <body>
   <!-- Footer -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <footer class="footer page-footer text-light" style="background-color:rgb(77, 80, 109);" align="center">
     <!-- Footer Elements -->
     <div class="container">
@@ -131,7 +136,7 @@
             </a>
             <a class="text-light" href="https://twitter.com/home?status={{request.build_absolute_uri}}">
             </a>
-              <a class="text-light" href="https://www.linkedin.com/shareArticle?mini=true&url={{request.build_absolute_uri}}&title=AlgoNinjutsu&summary=Check%20out%20this%20website%20AlgoNinjutsu!%20&source={{request.build_absolute_uri}}">
+            <a class="text-light" href="https://www.linkedin.com/shareArticle?mini=true&url={{request.build_absolute_uri}}&title=AlgoNinjutsu&summary=Check%20out%20this%20website%20AlgoNinjutsu!%20&source={{request.build_absolute_uri}}">
               <i class="fab fa-linkedin"></i>
             </a>
             <a class="text-light" href="http://www.reddit.com/submit?url={{request.build_absolute_uri}}&title=Check%20out%20this%20website%20AlgoNinjutsu">
@@ -140,7 +145,7 @@
             <a class="text-light" href="https://twitter.com/share?url={{request.build_absolute_uri}}&title=Check%20out%20this%20website%20AlgoNinjutsu">
               <i class="fab fa-twitter-square"></i>
 
-           </div>
+          </div>
         </div>
         <!-- Grid column -->
       </div>
@@ -150,14 +155,15 @@
     <!-- Copyright -->
     <div class="text-center" style="background-color:rgb(77,91,109);">Connect with me<br>
       <a class="text-light" href="https://www.linkedin.com/in/patrick-leaton-a366551a6/">
-      <i class="fab fa-linkedin"></i>
-    </a>
-    <a class="text-light contact mx-2" href="mailto: Patrick@AlgoNinjutsu.com">
-  <i class="far fa-envelope"></i>
-  </a>
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a class="text-light contact mx-2" href="mailto: Patrick@AlgoNinjutsu.com">
+        <i class="far fa-envelope"></i>
+      </a>
     </div>
     <!-- Copyright -->
   </footer>
   <!-- Footer -->
 </body>
+
 </html>

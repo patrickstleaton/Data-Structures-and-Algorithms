@@ -3,6 +3,8 @@ from django.shortcuts import render, get_object_or_404, redirect
 from django.utils import timezone
 from django.views.generic import (TemplateView, ListView, DetailView)
 from blog.models import Post
+from django.db.models import Max
+import random
 
 class SearchView(ListView):
     paginate_by = 50
@@ -28,7 +30,6 @@ class PostListView(ListView):
     def get_queryset(self):
         return Post.objects.all().order_by('title')
 
-
 class CategoryPostListView(ListView):
     paginate_by = 50
     model = Post
@@ -48,3 +49,9 @@ class DifficultyPostListView(ListView):
 
 class PostDetailView(DetailView):
     model = Post
+
+class RandomView(ListView):
+    model = Post
+    def get_queryset(self):
+        total_posts = Post.objects.all().count()
+        return Post.objects.filter(id = random.randint(1, 355))

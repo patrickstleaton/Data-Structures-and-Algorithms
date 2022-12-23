@@ -9,4 +9,5 @@ path('questions/', views.PostListView.as_view(), name='post_list'),
 path('questions/category/<str:category>/', views.CategoryPostListView.as_view(), name='category_post_list'),
 path('questions/difficulty/<str:difficulty>/', views.DifficultyPostListView.as_view(), name='difficulty_post_list'),
 path('post/<int:pk>/', views.PostDetailView.as_view(), name='post_detail'),
+path('post/random/', views.RandomView.as_view(), name='random'),
 ]
